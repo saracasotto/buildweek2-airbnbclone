@@ -40,6 +40,21 @@ header button i:last-of-type {
     font-size: 2em;
 }
 
+.div-input input{
+    width: 100%;
+    border: none;
+    padding: 2px 0px;
+}
+
+button.search-btn{
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 56, 92) none repeat scroll 0% 0% !important;
+    width: 100px;
+    padding: 12px 12px;
+    border-radius: 25px;
+}
+
 /*SNAPSCROLL FOOTER*vvvvvvvvvvvvvvvvvv*/
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -89,3 +104,4 @@ header button i:last-of-type {
     display: contents;
 }
 /*SNAPSCROLL FOOTER *^^^^^^^^^^^^^^*/
+
