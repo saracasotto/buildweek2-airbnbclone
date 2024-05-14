@@ -104,16 +104,324 @@
             </div>
         </section>
         <section class="container-fluid px-0">
-            <p>Inspiration for future getaways</p>
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn">Popular</button>
-                <button type="button" class="btn">Historic</button>
-                <button type="button" class="btn">Coastal</button>
-                <button type="button" class="btn">Islands</button>
-                <button type="button" class="btn">Lakes</button>
-                <button type="button" class="btn">Unique stays</button>
-                <button type="button" class="btn">Categories</button>
-                <button type="button" class="btn">Things to do</button>
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col">
+                        <h2>Inspiration for future getaways</h2>
+                        <div class="position-relative">
+                            <div class="scroll-container" id="scroll-container">
+        
+                                <ul class="nav nav-tabs nav-underline dc" id="myTab" role="tablist">
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="popular" data-bs-toggle="tab"
+                                                data-bs-target="#uno" type="button" role="tab"
+                                                aria-controls="home-tab-pane" aria-selected="true">Popular</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="arts&culture" data-bs-toggle="tab"
+                                                data-bs-target="#due" type="button" role="tab"
+                                                aria-controls="profile-tab-pane" aria-selected="false">Arts & culture</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="outdoors" data-bs-toggle="tab"
+                                                data-bs-target="#tre" type="button" role="tab"
+                                                aria-controls="contact-tab-pane" aria-selected="false">Outdoors</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="mountains" data-bs-toggle="tab"
+                                                data-bs-target="#quattro" type="button" role="tab"
+                                                aria-controls="profile-tab-pane" aria-selected="false">Mountains</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="beach" data-bs-toggle="tab"
+                                                data-bs-target="#cinque" type="button" role="tab"
+                                                aria-controls="contact-tab-pane" aria-selected="false">Beach</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="uniqueStays" data-bs-toggle="tab"
+                                                data-bs-target="#sei" type="button" role="tab"
+                                                aria-controls="profile-tab-pane" aria-selected="false">Unique stays</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="categories" data-bs-toggle="tab"
+                                                data-bs-target="#sette" type="button" role="tab"
+                                                aria-controls="contact-tab-pane" aria-selected="false">Categories</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="thingstoDo" data-bs-toggle="tab"
+                                                data-bs-target="#otto" type="button" role="tab"
+                                                aria-controls="profile-tab-pane" aria-selected="false">Things to do</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="travelTips" data-bs-toggle="tab"
+                                                data-bs-target="#nove" type="button" role="tab"
+                                                aria-controls="contact-tab-pane" aria-selected="false">Travel tips &
+                                                inspiration</button>
+                                        </li>
+                                    </div>
+                                    <div class="scroll-item ">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="airbnb" data-bs-toggle="tab"
+                                                data-bs-target="#dieci" type="button" role="tab"
+                                                aria-controls="profile-tab-pane" aria-selected="false">Airbnb-friendly
+                                                apartments</button>
+                                        </li>
+                                    </div>
+                                </ul>
+        
+                            </div>
+                            <span class="carousel-arrow left" id="prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                            <span class="carousel-arrow right" id="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="popular"
+                    tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Canmore
+                            </li>
+                            <li>
+                                Pet-friendly rentals
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Marbella
+                            </li>
+                            <li>
+                                Vacation rentals
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="due" role="tabpanel" aria-labelledby="arts&culture" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Phoenix
+                            </li>
+                            <li>
+                                Mansion rentals
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Los Angeles
+                            </li>
+                            <li>
+                                Condo rentals
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tre" role="tabpanel" aria-labelledby="outdoors" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Lake Martin
+                            </li>
+                            <li>
+                                Apartment rentals
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Nerja
+                            </li>
+                            <li>
+                                Apartment rentals
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="quattro" role="tabpanel" aria-labelledby="mountains" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Mentone
+                            </li>
+                            <li>
+                                Vacation rentals
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Helen
+                            </li>
+                            <li>
+                                Condo rentals
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="cinque" role="tabpanel" aria-labelledby="beach" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Dauphin Island
+                            </li>
+                            <li>
+                                Rentals with pools
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Gulf Shores
+                            </li>
+                            <li>
+                                Vacation rentals
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sei" role="tabpanel" aria-labelledby="uniqueStays" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Cabins
+                            </li>
+                            <li>
+                                United States
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Glamping
+                            </li>
+                            <li>
+                                United States
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="sette" role="tabpanel" aria-labelledby="categories" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Amazing pools
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Camping
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="otto" role="tabpanel" aria-labelledby="thingstoDo" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                London
+                            </li>
+                            <li>
+                                England
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                New York
+                            </li>
+                            <li>
+                                New York
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nove" role="tabpanel" aria-labelledby="travelTips" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Family travel hub
+                            </li>
+                            <li>
+                                Tips and inspiration
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Vacation ideas for any budget
+                            </li>
+                            <li>
+                                Make it special without making it spendy
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="dieci" role="tabpanel" aria-labelledby="airbnb" tabindex="0">
+                    <div>
+                        <ul>
+                            <li>
+                                Atlanta Metro
+                            </li>
+                            <li>
+                                Georgia
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Austin Metro
+                            </li>
+                            <li>
+                                Texas
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
