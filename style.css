@@ -39,3 +39,53 @@ header button i {
 header button i:last-of-type {
     font-size: 2em;
 }
+
+/*SNAPSCROLL FOOTER*vvvvvvvvvvvvvvvvvv*/
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    border-color: transparent;
+    border-bottom-color: currentcolor;
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scroll-item {
+    display: inline-block;
+    width: 300px;
+    scroll-snap-align: start;
+    margin-right: 10px;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carousel-arrow.left {
+    left: -10px;
+}
+
+.carousel-arrow.right {
+    right: -10px;
+}
+
+.dc {
+    display: contents;
+}
+/*SNAPSCROLL FOOTER *^^^^^^^^^^^^^^*/
