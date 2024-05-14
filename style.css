@@ -7,7 +7,35 @@
     color: #222222bb;
 }
 
+
 header .logo img {
     width: auto;
     height: 50px;
+}
+
+header .user >* {
+    margin: 0 0.8em;
+}
+
+header .user i {
+    color: #6a6a6a;
+}
+
+header button {
+    border: solid 1px silver;
+    padding: 0 4px;
+    background-color: transparent;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button i {
+    font-size: 1.3em;
+    padding: 0 5px;
+}
+
+header button i:last-of-type {
+    font-size: 2em;
 }
