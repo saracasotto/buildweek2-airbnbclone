@@ -208,7 +208,7 @@ input[type="text"]:focus {
 .bar-container p{
   margin-bottom: 0;
 }
-
+/*NAV FOOTER*/
 .scroll-container {
   display: flex;
   overflow-x: scroll;
