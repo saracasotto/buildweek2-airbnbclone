@@ -76,6 +76,8 @@ header button i:last-of-type {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+
 }
 
 .card-body {
@@ -100,27 +102,6 @@ header button i:last-of-type {
     width: 0.5em;
     height: 0.5em;
 }
-
-
-.div-input input{
-    width: 100%;
-    border: none;
-    padding: 2px 0px;
-}
-
-button.search-btn{
-    background: rgb(255, 56, 92) none repeat scroll 0% 0% !important;
-    border-radius: 50%;
-    padding: 0 1.1em;
-    border: none;
-}
-
-.search-btn i {
-    color: white;
-    font-weight: 400;
-}
-
-
 
 /* TOP BAR NAV */
 
