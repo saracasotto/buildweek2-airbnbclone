@@ -1,204 +1,211 @@
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
 
-*{
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    box-sizing: border-box;
+* {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
 
-    color: #222222bb;
-    margin:0;
-    padding:0;
+  color: #222222bb;
+  margin: 0;
+  padding: 0;
 
-    color: #222;
+  color: #222;
 
 }
+
 html,
-  body{
-    height:100%;
-  }
+body {
+  height: 100%;
+}
 
 header .logo img {
-    width: auto;
-    height: 50px;
+  width: auto;
+  height: 50px;
 }
 
 header .user span,
 header .user #globe {
-    padding: 10px 15px;
-    font-weight: 400;
+  padding: 10px 15px;
+  font-weight: 400;
 }
 
-header .user span:hover, 
+header .user span:hover,
 header .user #globe:hover {
-    background-color: rgba(241, 241, 241, 0.89);
-    border-radius: 25px;
-    cursor: pointer;
+  background-color: rgba(241, 241, 241, 0.89);
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 header button {
-    border: solid 1px silver;
-    padding: 0 4px;
-    background-color: transparent;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 0.5em;
+  border: solid 1px silver;
+  padding: 0 4px;
+  background-color: transparent;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0.5em;
 }
 
 header button i {
-    font-size: 1.3em;
-    padding: 0 5px;
+  font-size: 1.3em;
+  padding: 0 5px;
 }
 
 header button i:last-of-type {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 
 .card {
-    width: 100%;
-    height: 20em;
-    border: none;
+  width: 100%;
+  height: 20em;
+  border: none;
 }
 
-.card .carousel-slide {
-    border-radius: 15px;
+.card .carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .card .carousel-item {
-    width: 100%;
-    height: 18em;
-    border-radius: 15px;
+  width: 100%;
+  height: 18em;
 }
 
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-body {
-    padding: 1em 0;
-    color: black
+  padding: 1em 0;
+  color: black
 }
 
 .card-title,
 .card-text {
-    font-size: 1em;
-    line-height: 1.25em;
-    margin: 0;
-    padding: 0;
+  font-size: 1em;
+  line-height: 1.25em;
+  margin: 0;
+  padding: 0;
 }
 
-.card-text:last-of-type{
-    font-weight: 500;
+.card-text:last-of-type {
+  font-weight: 500;
 }
 
 .card .carousel .carousel-indicators button {
-    border-radius: 50%;
-    width: 0.5em;
-    height: 0.5em;
+  border-radius: 50%;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 /* TOP BAR NAV */
 
 
-.bar{
-    width:800px;
-    background:white;
-    box-shadow:0 0 5px hsl(0 0% 78%);
-    height:70px;
-    border-radius:100vw;
-    display:flex;
-    justify-content:center;
-    font-size:1rem;
-    cursor: pointer;
-  }
-  
-  .bar div{
-    border-radius:inherit;
-    padding:0.8rem 1.5rem;
-    
-  }
-  
-  .bar div:hover{
-    background:hsl(0 0% 94%);
-  }
-  
-  .location{
-    width:34%;
-  }
-  .check-in, .check-out, .guests{
-    width:22%;
-  }
-  
-  input[type="text"]{
-    background:none;
-    border:none;
-    padding:0.2rem 0 0 0;
-    cursor: pointer;
-  }
-  
-  input[type="text"]:focus{
-    outline:none;
-  }
-  
-  ::placeholder{
-    font-size:1rem;
-  }
-  
-  .guests{
-    position: relative;  
-  }
-  .guests span{
-    width: 40px;
-    height: 40px;
-    position:absolute;
-    top:50%;
-    right:10px;
-    transform:translateY(-50%);
-    background:#FF385C;
-    color:white;
-    font-size: 1rem;
-    padding:0.7rem;
-    border-radius:50%;
-  }
-  .guests span img{
-    padding-bottom: 9px;
-    width: 18px;
-  }
+.bar {
+  width: 800px;
+  background: white;
+  box-shadow: 0 0 5px hsl(0 0% 78%);
+  height: 70px;
+  border-radius: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
-  
+.bar div {
+  border-radius: inherit;
+  padding: 0.8rem 1.5rem;
 
-  
-  .bar>div{
-    position:relative;
-  }
-  
-  
-  .bar>div::before{
-    position:absolute;
-    content:"";
-    left:0;
-    top:50%;
-    transform:translateY(-50%);
-    width:1px;
-    height:55%;
-    background:hsl(0 0% 90%);
-  }
-  
-  .bar>div:nth-of-type(1)::before{
-     background:transparent;
-  }
-  
-  
-  .bar>div:hover::before{
-    background:transparent;
-  }
+}
 
-  div.location > p, div.check-in > p, div.check-out > p, div.guests > p{
-    margin-bottom: 0;
-  }
+.bar div:hover {
+  background: hsl(0 0% 94%);
+}
+
+.location {
+  width: 34%;
+}
+
+.check-in,
+.check-out,
+.guests {
+  width: 22%;
+}
+
+input[type="text"] {
+  background: none;
+  border: none;
+  padding: 0.2rem 0 0 0;
+  cursor: pointer;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.guests {
+  position: relative;
+}
+
+.guests span {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: #FF385C;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+
+.guests span img {
+  padding-bottom: 9px;
+  width: 18px;
+}
+
+
+
+
+.bar>div {
+  position: relative;
+}
+
+
+.bar>div::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 55%;
+  background: hsl(0 0% 90%);
+}
+
+.bar>div:nth-of-type(1)::before {
+  background: transparent;
+}
+
+
+.bar>div:hover::before {
+  background: transparent;
+}
+
+div.location>p,
+div.check-in>p,
+div.check-out>p,
+div.guests>p {
+  margin-bottom: 0;
+}
