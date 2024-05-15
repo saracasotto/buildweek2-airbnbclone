@@ -23,7 +23,7 @@
         <div>Search Bar Open</div>
         <div class="user d-flex justify-content-between align-items-center">
             <span>Airbnb your home</span>
-            <i class="bi bi-globe"></i>
+            <i class="bi bi-globe" id="globe"></i>
             <button>
                 <i class="bi bi-list"></i>
                 <i class="bi bi-person-circle"></i>
@@ -36,18 +36,18 @@
             <div class="col-9">
                 <div class="d-flex flex-row align-items-center">
                     <div class="col-6 div-input">
-                        <label>Dove</label>
-                        <input type="text" placeholder="Cerca Destinazioni" />
+                        <label>Where</label>
+                        <input type="text" placeholder="Search destinations" />
                     </div>
                     <div>|</div>
                     <div class="col-3 div-input">
                         <label>Check-in</label>
-                        <input type="text" placeholder="Aggiungi date" />
+                        <input type="text" placeholder="Add dates" />
                     </div>
                     <div>|</div>
                     <div class="col-3 div-input">
                         <label>Check-out</label>
-                        <input type="text" placeholder="Aggiungi date" />
+                        <input type="text" placeholder="Add dates" />
                     </div>
                     <div>|</div>
                 </div>
@@ -55,13 +55,11 @@
             <div class="col-3">
                 <div class="d-flex flex-row">
                     <div class="div-input">
-                        <label>Chi</label>
-                        <input type="text" placeholder="Aggiungi date" />
+                        <label>Who</label>
+                        <input type="text" placeholder="Add guests" />
                     </div>
                     <button class="search-btn">
-                        <div class="align-items-center">
-                            <span class="text">Search</span>
-                        </div>
+                        <i class="bi bi-search"></i>
                     </button>
                 </div>
             </div>
@@ -90,13 +88,13 @@
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-3">
                     <div class="card">
-                        <div id="carouselExample" class="carousel slide">
+                        <div id="carousel1" class="carousel slide">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carousel1indicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carousel1indicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carousel1indicators" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
@@ -110,12 +108,12 @@
                                     <img src="assets/Cards/destination1/3.webp" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -130,32 +128,32 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3">
                     <div class="card">
-                        <div id="carouselExample" class="carousel slide">
+                        <div id="carousel2" class="carousel slide">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carousel2Indicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carousel2Indicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carousel2Indicators" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/Cards/destination1/1.webp" alt="...">
+                                    <img src="assets/Cards/destination2/1.webp" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/Cards/destination1/2.webp" alt="...">
+                                    <img src="assets/Cards/destination2/2.webp" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/Cards/destination1/3.webp" alt="...">
+                                    <img src="assets/Cards/destination2/3.webp" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -170,32 +168,32 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3">
                     <div class="card">
-                        <div id="carouselExample" class="carousel slide">
+                        <div id="carousel3" class="carousel slide">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carousel3Indicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carousel3Indicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carousel3Indicators" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/Cards/destination1/1.webp" alt="...">
+                                    <img src="assets/Cards/destination3/1.webp" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/Cards/destination1/2.webp" alt="...">
+                                    <img src="assets/Cards/destination3/2.webp" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/Cards/destination1/3.webp" alt="...">
+                                    <img src="assets/Cards/destination3/3.webp" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -210,32 +208,32 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3">
                     <div class="card">
-                        <div id="carouselExample" class="carousel slide">
+                        <div id="carousel4" class="carousel slide">
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                <button type="button" data-bs-target="#carousel4Indicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carousel4Indicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                <button type="button" data-bs-target="#carousel4Indicators" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/Cards/destination1/1.webp" alt="...">
+                                    <img src="assets/Cards/destination4/4.webp" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/Cards/destination1/2.webp" alt="...">
+                                    <img src="assets/Cards/destination4/2.webp" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/Cards/destination1/3.webp" alt="...">
+                                    <img src="assets/Cards/destination4/3.webp" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
