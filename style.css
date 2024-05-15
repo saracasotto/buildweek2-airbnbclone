@@ -4,9 +4,13 @@
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
     box-sizing: border-box;
+
     color: #222222bb;
     margin:0;
     padding:0;
+
+    color: #222;
+
 }
 html,
   body{
@@ -18,12 +22,17 @@ header .logo img {
     height: 50px;
 }
 
-header .user >* {
-    margin: 0 0.8em;
+header .user span,
+header .user #globe {
+    padding: 10px 15px;
+    font-weight: 400;
 }
 
-header .user i {
-    color: #6a6a6a;
+header .user span:hover, 
+header .user #globe:hover {
+    background-color: rgba(241, 241, 241, 0.89);
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 header button {
@@ -34,6 +43,7 @@ header button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 0.5em;
 }
 
 header button i {
@@ -43,6 +53,71 @@ header button i {
 
 header button i:last-of-type {
     font-size: 2em;
+}
+
+
+.card {
+    width: 100%;
+    height: 20em;
+    border: none;
+}
+
+.card .carousel-slide {
+    border-radius: 15px;
+}
+
+.card .carousel-item {
+    width: 100%;
+    height: 18em;
+    border-radius: 15px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1em 0;
+    color: black
+}
+
+.card-title,
+.card-text {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 0;
+}
+
+.card-text:last-of-type{
+    font-weight: 500;
+}
+
+.card .carousel .carousel-indicators button {
+    border-radius: 50%;
+    width: 0.5em;
+    height: 0.5em;
+}
+
+
+.div-input input{
+    width: 100%;
+    border: none;
+    padding: 2px 0px;
+}
+
+button.search-btn{
+    background: rgb(255, 56, 92) none repeat scroll 0% 0% !important;
+    border-radius: 50%;
+    padding: 0 1.1em;
+    border: none;
+}
+
+.search-btn i {
+    color: white;
+    font-weight: 400;
 }
 
 
