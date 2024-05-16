@@ -395,3 +395,33 @@ main .map {
   width: 100%;
   height: 100%;
 }
+
+p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.icon{
+   color: #8c8b8b;
+   cursor: pointer;
+}
+
+.icon:hover{
+  color: black;
+}
+
+.w-center{
+  width: 82%;
+}
+
+.prev-icon{
+  width: 70px;
+  height: 40px;
+  margin-left: 100px;
+}
+
+.next-icon{
+  width: 70px;
+  height: 40px;
+  margin-right: 100px;
+}
