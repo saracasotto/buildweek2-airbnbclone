@@ -321,7 +321,12 @@ input[type="text"]:focus {
 
 main .results {
   width: 65%;
+  height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -webkit-scrollbar-width: none;
 }
+
 
 main .map {
   width: 35%;
@@ -344,7 +349,7 @@ main .map {
 
 
 
-  /* THIRD PAGE */
+/* THIRD PAGE */
 
 #third-page {
   width: 100%;
