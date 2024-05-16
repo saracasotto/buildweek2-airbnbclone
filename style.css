@@ -50,6 +50,10 @@ header button i:last-of-type {
   font-size: 2em;
 }
 
+.bi-globe {
+  margin-right: 1em;
+}
+
 .btn-group svg + svg {
   margin-left: .7em;
 }
