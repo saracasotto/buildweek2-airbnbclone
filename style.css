@@ -311,6 +311,7 @@ input[type="text"]:focus {
 
 
 
+
 /* QUI PARTE PAGINA 2*/
 
 #second-main {
@@ -341,3 +342,21 @@ main .map {
   }
 }
 
+
+
+  /* THIRD PAGE */
+
+#third-page {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.col-6 img {
+  width: 100%;
+  height: 100%;
+}
+
+.big-img img {
+  width: 100%;
+  height: 100%;
+}
