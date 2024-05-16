@@ -9,7 +9,6 @@
   color: #222;
 }
 
-html,
 body {
   height: 100%;
 }
@@ -59,6 +58,21 @@ header button i:last-of-type {
   border: none;
 }
 
+@media (max-width: 767px) {
+
+  .card {
+    margin: 2em 0em;
+  }
+  
+}
+
+@media (min-width: 767px) {
+  .card {
+    margin: 1em 0em;
+  }
+  
+}
+
 .card .carousel-inner {
   border-radius: 15px;
   overflow: hidden;
@@ -67,6 +81,15 @@ header button i:last-of-type {
 .card .carousel-item {
   width: 100%;
   height: 18em;
+}
+
+@media (max-width:767px) {
+
+  .card .carousel-item{
+    width: 100%;
+    height: 90vw;
+  }
+  
 }
 
 .card img {
@@ -82,7 +105,7 @@ header button i:last-of-type {
 
 .card-title,
 .card-text {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.25em;
   margin: 0;
   padding: 0;
@@ -100,20 +123,23 @@ header button i:last-of-type {
 
 /* TOP BAR NAV */
 
-.top-bar {
+#top-bar {
   padding: 0;
+  width: 40%;
+  height: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .bar-container {
-  width: 70%;
-  margin: 0 auto;
-  box-shadow: 0 0 5px hsl(0 0% 78%);
-  height: 70px;
+  width: 80%;
+  margin: 0.5em auto;
+  box-shadow: 0 0 5px hsl(0 0% 78%); 
   border-radius: 100vw;
   display: flex;
   justify-content: center;
-  font-size: 1rem;
+  align-items: center;
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -205,9 +231,10 @@ input[type="text"]:focus {
   background: transparent;
 }
 
-.bar-container p{
+.bar-container p {
   margin-bottom: 0;
 }
+
 /*NAV FOOTER*/
 .scroll-container {
   display: flex;
@@ -215,16 +242,20 @@ input[type="text"]:focus {
   white-space: nowrap;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   scroll-behavior: smooth;
 }
+
 .scroll-item {
   display: inline-block;
   width: auto;
   scroll-snap-align: start;
   margin-right: 10px;
 }
+
 .carousel-arrow {
   position: absolute;
   top: 30%;
@@ -233,26 +264,33 @@ input[type="text"]:focus {
   cursor: pointer;
   z-index: 100;
 }
+
 .carousel-arrow.left {
   left: -2%;
 }
+
 .carousel-arrow.right {
   right: -2%;
 }
-.dc{
+
+.dc {
   display: contents;
 }
-.tab-pane li{
+
+.tab-pane li {
   list-style-type: none;
 }
+
 .tab-pane ul li:first-of-type {
   font-weight: bold;
 }
+
 .tab-pane ul li:nth-of-type(2) {
   color: #5e5e5e;
 }
+
 .nav-tabs .nav-link {
   margin-bottom: calc(-1* var(--bs-nav-tabs-border-width));
-   border: transparent ; 
-   color: black;
+  border: transparent;
+  color: black;
 }
