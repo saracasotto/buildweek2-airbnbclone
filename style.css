@@ -50,6 +50,36 @@ header button i:last-of-type {
   font-size: 2em;
 }
 
+.bi-globe {
+  margin-right: 1em;
+}
+
+.btn-group svg + svg {
+  margin-left: .7em;
+}
+
+.btn-group {
+  height: 50px;
+  border: 1px solid rgb(152, 152, 152);
+  border-radius: 20px;
+  transition: box-shadow 0.2s ;
+}
+
+ .btn-group:hover {
+  box-shadow: 0px 8px 9px -7px #999999
+  ;
+  
+} 
+
+.btn {
+  --bs-btn-border-width: none;
+  --bs-btn-border-color: none;
+  --bs-btn-border-radius: none;
+}
+
+button.btn {
+  margin: 0;
+}
 
 .card {
   width: 100%;
