@@ -1,8 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 300;
+  font-family: "Manrope", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -66,7 +65,8 @@ header button i:last-of-type {
 .card .carousel-item {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
 }
 
 .card .carousel-item img {
@@ -91,8 +91,9 @@ header button i:last-of-type {
   padding: 0;
 }
 
+.card-title,
 .card-text:last-of-type {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .card .carousel .carousel-indicators button {
@@ -114,7 +115,7 @@ header button i:last-of-type {
 .bar-container {
   width: 80%;
   margin: 0.5em auto;
-  box-shadow: 0 0 5px hsl(0 0% 78%); 
+  box-shadow: 0 0 5px hsl(0 0% 78%);
   border-radius: 100vw;
   display: flex;
   justify-content: center;
@@ -216,6 +217,11 @@ input[type="text"]:focus {
 }
 
 /*NAV FOOTER*/
+
+#inspiration {
+  background-color: #f7f7f7;
+}
+
 .scroll-container {
   display: flex;
   overflow-x: scroll;
@@ -227,6 +233,7 @@ input[type="text"]:focus {
   scrollbar-width: none;
   /* Firefox */
   scroll-behavior: smooth;
+  border-bottom: solid 0.5px #e2e2e2;
 }
 
 .scroll-item {
@@ -246,11 +253,11 @@ input[type="text"]:focus {
 }
 
 .carousel-arrow.left {
-  left: -2%;
+  left: -5%;
 }
 
 .carousel-arrow.right {
-  right: -2%;
+  right: -5%;
 }
 
 @media (min-width:998px) {
@@ -258,7 +265,7 @@ input[type="text"]:focus {
   .carousel-arrow {
     display: none;
   }
-  
+
 }
 
 .dc {
@@ -275,10 +282,11 @@ input[type="text"]:focus {
 
 .tab-pane li {
   list-style-type: none;
+  font-size: 0.9em;
 }
 
 .tab-pane ul li:first-of-type {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .tab-pane ul li:nth-of-type(2) {
@@ -288,5 +296,15 @@ input[type="text"]:focus {
 .nav-tabs .nav-link {
   margin-bottom: calc(-1* var(--bs-nav-tabs-border-width));
   border: transparent;
-  color: black;
+  border-bottom: solid transparent;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #5e5e5e;
+  margin-right: 0.5em;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  color: #5e5e5e;
+  font-weight: 700;
 }
