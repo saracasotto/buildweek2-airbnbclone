@@ -310,6 +310,40 @@ input[type="text"]:focus {
 }
 
 
+
+
+/* QUI PARTE PAGINA 2*/
+
+#second-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .results {
+  width: 65%;
+}
+
+main .map {
+  width: 35%;
+  background-image: url(assets/map/tokyomap.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+@media (max-width: 576px) {
+  #second-main {
+    flex-direction: column-reverse;
+  }
+
+  main .results,
+  main .map {
+    width: 100%;
+  }
+}
+
+
+
   /* THIRD PAGE */
 
 #third-page {
