@@ -62,6 +62,10 @@ header button i:last-of-type {
   margin-right: 1em;
 }
 
+.min {
+  min-width: 150px;
+}
+
 .btn-group svg+svg {
   margin: 0;
   margin-left: 0.7em;
@@ -73,6 +77,7 @@ header button i:last-of-type {
   transition: box-shadow 0.3s;
   padding: 0.2em 0em;
   z-index: inherit;
+  min-width: 90px;
 }
 
 .btn-group:hover {
