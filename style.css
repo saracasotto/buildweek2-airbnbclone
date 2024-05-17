@@ -342,11 +342,15 @@ input[type="text"]:focus {
 
 footer {
   background-color: #f7f7f7;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
 
 footer ul {
   list-style: none;
   font-size: 18px;
+  padding-right: 2em;
 }
 footer ul li{
   padding-bottom: 1em;
@@ -360,14 +364,22 @@ footer h6 {
   font-size: 18px;
   font-weight: 800;
   padding-bottom: .5em;
+  padding-top: .5em;
 }
 
-@media screen and (min-width: 1200px) {
-    .col-12 {
-      padding: 0;
-    }
+
+#icons img {
+    height: 23px;
+    width: 23px;
+    margin-right: 1em;
+    
 }
 
+#end-page  { 
+  
+  width: 100%;
+  
+}
 
 
 
