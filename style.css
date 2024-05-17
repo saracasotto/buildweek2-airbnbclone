@@ -542,17 +542,120 @@ main .map iframe {
 
 /* THIRD PAGE */
 
-#third-page {
+#rooms {
+  padding-top: 100px;
   width: 100%;
-  margin: 0 auto;
 }
 
-.col-6 img {
+#rooms header {
+  padding: 10%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#rooms section img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.big-img img {
+#rooms section img:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+#rooms section #img-container {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#right-nav span {
+  padding: 0.5em;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+main section .description {
+  width: 65%;
+}
+
+main section .booking-modal {
+  width: 35%;
+  position: relative;
+}
+
+.reservation-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
   width: 100%;
-  height: 100%;
+  position: sticky;
+}
+
+.price {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 1em;
+  font-weight: bold;
+}
+.reservation-details {
+  font-size: 14px;
+  color: #777;
+}
+.reserve-btn {
+  background: linear-gradient(90deg, rgba(228,29,87,1) 0%, rgba(219,12,100,1) 100%);
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+.guest-favourite {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+.rating span {
+  margin-right: 4px;
+}
+.reviews {
+  display: flex;
+  align-items: center;
+}
+.reviews a {
+  margin-left: 4px;
+  color: #007bff;
+  text-decoration: none;
+}
+.reviews a:hover {
+  text-decoration: underline;
 }
