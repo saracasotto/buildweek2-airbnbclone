@@ -8,8 +8,16 @@
   color: #222;
 }
 
+html, 
 body {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  font-size: 0.9em;
+  width: 100%;
 }
 
 header .logo img {
@@ -54,22 +62,23 @@ header button i:last-of-type {
   margin-right: 1em;
 }
 
-.btn-group svg + svg {
-  margin-left: .7em;
+.btn-group svg+svg {
+  margin: 0;
+  margin-left: 0.7em;
 }
 
 .btn-group {
-  height: 50px;
-  border: 1px solid rgb(207, 207, 207);
-  border-radius: 70px;
-  transition: box-shadow 0.2s ;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 25px;
+  transition: box-shadow 0.3s;
+  padding: 0.2em 0em;
+  z-index: inherit;
 }
 
- .btn-group:hover {
-  box-shadow: 0px 8px 9px -7px #999999
-  ;
-  
-} 
+.btn-group:hover {
+  box-shadow: 0px 5px 5px -3px #999999;
+
+}
 
 .btn {
   --bs-btn-border-width: none;
@@ -81,10 +90,106 @@ button.btn {
   margin: 0;
 }
 
+.dropdown-menu {
+  width: 230px;
+  font-size: 1em;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px -4px 15px -2px rgba(231, 231, 231, 0.877);
+}
+
+.dropdown-menu ul {
+  padding: 0;
+
+}
+
+.dropdown-item {
+  padding: 0.6em 1em;
+  margin: 0;
+  width: 100%;
+}
+
+
+/*CAROUSEL*/
+
+nav {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  background-color: white;
+  z-index: 1000;
+}
+
+nav {
+  position: fixed;
+  top: 100px;
+  z-index: 900;
+  background-color: white;
+  border-top: solid 0.2px #e2e2e2;
+  padding-top: 20px;
+}
+
+body {
+  padding-top: 190px;
+}
+
+#iconsCarousel button {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+}
+
+.carousel-control-prev {
+  left: -3%;
+}
+
+.carousel-control-next {
+  right: -3%;
+}
+
+@media (max-width: 767px) {
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+.icon p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .icon p {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+
+}
+
+.icon {
+  opacity: 0.6;
+
+}
+
+.icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+
 .card {
   width: 100%;
   height: auto;
   border: none;
+}
+
+.card .carousel:hover {
+  cursor: pointer;
 }
 
 .card .carousel-inner {
@@ -136,22 +241,22 @@ button.btn {
 
 #top-bar {
   padding: 0;
-  width: 40%;
-  height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .bar-container {
   width: 80%;
-  margin: 0.5em auto;
+  margin: 0 auto;
   box-shadow: 0 0 5px hsl(0 0% 78%);
-  border-radius: 100vw;
+  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 0.9em;
+  font-weight: 500;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .bar-container div {
@@ -161,6 +266,10 @@ button.btn {
 
 .bar-container div:hover {
   background: hsl(0 0% 94%);
+}
+
+.bar-container input::placeholder {
+  font-size: 1.1em;
 }
 
 .location,
@@ -184,10 +293,6 @@ input[type="text"]:focus {
   outline: none;
 }
 
-::placeholder {
-  font-size: 1rem;
-}
-
 .guests {
   position: relative;
 }
@@ -196,25 +301,20 @@ input[type="text"]:focus {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 15%;
+  top: 12%;
   right: 10px;
   background: #FF385C;
   color: white;
   border-radius: 50%;
   text-align: center;
   vertical-align: center;
-  padding: 0.9em 1em;
-
+  padding: 1em 1em;
 }
 
-.guests i {
+.guests span i {
   color: white;
   font-weight: bold;
-}
-
-.guests span img {
-  padding-bottom: 9px;
-  width: 18px;
+  font-size: 1.3em;
 }
 
 .bar-container>div {
@@ -250,7 +350,7 @@ input[type="text"]:focus {
 
 #inspiration {
   background-color: #f7f7f7;
-  margin-bottom: 0!important;
+  border-bottom: solid 0.5px #e2e2e2;
 }
 
 .scroll-container {
@@ -291,7 +391,7 @@ input[type="text"]:focus {
   right: -5%;
 }
 
-@media (min-width:998px) {
+@media (min-width:992px) {
 
   .carousel-arrow {
     display: none;
@@ -322,6 +422,10 @@ input[type="text"]:focus {
 
 .tab-pane ul li:nth-of-type(2) {
   color: #5e5e5e;
+}
+
+.tab-pane li:hover {
+  cursor: pointer;
 }
 
 .nav-tabs .nav-link {
@@ -461,11 +565,11 @@ footer h6 {
 }
 
 
-/* QUI PARTE PAGINA 2*/
+/*SECOND PAGE*/
 
 #second-main {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main .results {
@@ -473,76 +577,199 @@ main .results {
   height: 80vh;
   overflow-y: scroll;
   scrollbar-width: none;
-  -webkit-scrollbar-width: none;
-}
 
+}
 
 main .map {
   width: 35%;
-  background-image: url(assets/map/tokyomap.png);
-  background-position: center;
-  background-size: cover;
-  height: 80vh;
 }
 
-@media (max-width: 576px) {
-  #second-main {
-    flex-direction: column-reverse;
-  }
+main .map iframe {
+  height: 80vh;
+  width: 100%;
+}
 
-  main .results,
-  main .map {
+.results-title {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+@media (max-width: 575px) {
+
+  #second-main {
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
+
+  main .map {
+    position: fixed;
+    width: 100%;
+  }
+
+  main .map iframe {
+    width: 100%;
+  }
+
+  body {
+    padding-top: 100px;
+  }
+
+  main .results {
+    width: 100%;
+    overflow-y: visible;
+    z-index: 1000;
+    margin-top: 40vh;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+    padding: 0;
+  }
+
+  .card {
+    padding: 1em;
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
 }
 
+@media (min-width: 576px) and (max-width: 991px) {
 
+  main .map {
+    display: none;
+  }
 
+  main .map iframe {
+    width: 100%;
+  }
+
+  main .results {
+    width: 100%;
+    background-color: white;
+  }
+
+}
 
 
 /* THIRD PAGE */
 
-#third-page {
+#rooms {
+  padding-top: 100px;
   width: 100%;
-  margin: 0 auto;
 }
 
-.col-6 img {
+#rooms header {
+  padding: 10%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+#rooms section img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.big-img img {
-  width: 100%;
-  height: 100%;
+#rooms section img:hover {
+  filter: brightness(80%);
+  cursor: pointer;
 }
 
-p{
-  font-size: 0.8rem;
+#rooms section #img-container {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#right-nav span {
+  padding: 0.5em;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+main section .description {
+  width: 65%;
+}
+
+main section .booking-modal {
+  width: 35%;
+  position: relative;
+}
+
+.reservation-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  width: 100%;
+  position: sticky;
+}
+
+.price {
+  font-size: 1.3em;
   font-weight: bold;
 }
 
-.icon{
-   color: #8c8b8b;
-   cursor: pointer;
+.total-price {
+  font-size: 1em;
+  font-weight: bold;
+}
+.reservation-details {
+  font-size: 14px;
+  color: #777;
+}
+.reserve-btn {
+  background: linear-gradient(90deg, rgba(228,29,87,1) 0%, rgba(219,12,100,1) 100%);
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.icon:hover{
-  color: black;
+
+.guest-favourite {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.w-center{
-  width: 82%;
+.rating {
+  display: flex;
+  align-items: center;
 }
-
-.prev-icon{
-  width: 70px;
-  height: 40px;
-  margin-left: 100px;
+.rating span {
+  margin-right: 4px;
 }
-
-.next-icon{
-  width: 70px;
-  height: 40px;
-  margin-right: 100px;
+.reviews {
+  display: flex;
+  align-items: center;
+}
+.reviews a {
+  margin-left: 4px;
+  color: #007bff;
+  text-decoration: none;
+}
+.reviews a:hover {
+  text-decoration: underline;
 }
