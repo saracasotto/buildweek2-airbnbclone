@@ -371,6 +371,20 @@ footer h6 {
   padding-top: .5em;
 }
 
+.assistenza {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.assistenza .row div {
+  padding: 0;
+  
+}
+
+#end {
+  margin-left: .5em;
+}
+
 #top {
   margin: 1em 1em 1em 2em;
   display: flex;
