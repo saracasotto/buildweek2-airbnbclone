@@ -340,17 +340,21 @@ input[type="text"]:focus {
   font-weight: 700;
 }
 
+.assistenza {
+  margin-left: 2em;
+}
+
 footer {
   background-color: #f7f7f7;
   width: 100%;
   padding: 0;
-  margin: 0 auto;
+  margin-left: 1em;
 }
 
 footer ul {
   list-style: none;
   font-size: 18px;
-  padding-right: 2em;
+  padding: 0;
 }
 footer ul li{
   padding-bottom: 1em;
@@ -367,20 +371,80 @@ footer h6 {
   padding-top: .5em;
 }
 
-
-#icons img {
-    height: 23px;
-    width: 23px;
-    margin-right: 1em;
-    
+#top {
+  margin: 1em 1em 1em 2em;
+  display: flex;
+  justify-content: left;
 }
 
-#end-page  { 
-  
-  width: 100%;
-  
+#top div {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
 }
 
+#top div p {
+  margin: 0;
+  padding-left: .3em;
+  font-size: 18px;
+  font-weight: 700
+}
+
+#top div:nth-child(2) {
+  margin-right: 4em;
+}
+
+#top div span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#top div p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.icons img {
+  margin-right: 1em;
+}
+
+#top div img {
+  height: 24px;
+  width: 24px;
+}
+
+#foot {
+  margin: 2em 1em 1em 2em;
+}
+
+#foot ul {
+  display: flex;
+}
+
+#foot ul li {
+  padding-right: .9em;
+  font-size: 16px;
+}
+
+#foot div p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#foot ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  #top {
+    justify-content: center;
+  }
+  #foot div {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
 /* QUI PARTE PAGINA 2*/
