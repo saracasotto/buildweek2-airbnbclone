@@ -483,12 +483,9 @@ footer h6 {
   
 }
 
-#end {
-  margin-left: .5em;
-}
 
 #top {
-  margin-left: 1em;
+  margin-left: .5em;
   margin-bottom: 1.5em;
   margin-top: 1em;
   display: flex;
@@ -532,7 +529,7 @@ footer h6 {
 }
 
 #foot {
-  margin-left: 1em;
+  margin-left: .5em;
 }
 
 #foot ul {
