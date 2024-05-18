@@ -204,7 +204,8 @@ body {
 
 .card .carousel-control-prev-icon,
 .card .carousel-control-next-icon {
-  display: none;
+  display: block;
+  opacity: 0;
   width: 2rem;
   height: 2rem;
   background-image: none;
@@ -225,6 +226,7 @@ body {
   cursor: pointer;
 }
 
+
 .card .carousel-control-next-icon img,
 .carousel-control-prev-icon img {
   height: 30px;
@@ -236,19 +238,40 @@ body {
   transition: transform .3s;
 }
 
-.card .carousel-control-next-icon:hover img,
-.carousel-control-prev-icon:hover img {
+.save-btn {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding: .4em;
+  width: 35px;
+  height: 35px;
+  z-index: 1000;
+  top: 5%;
+  right: 5%;
+  opacity: .9;
+  transition: transform .3s;
+}
+.save-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
 
+.card .carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
   transform: scale(1.1);
   opacity: 1;
 }
 
-.card .carousel:hover .carousel-control-prev-icon,
-.card .carousel:hover .carousel-control-next-icon {
-  cursor: pointer;
-  display: inline-block;
+.card .carousel .carousel-control-prev-icon, 
+.card .carousel .carousel-control-next-icon {
+  transition: opacity .4s;
 }
 
+.card .carousel:hover .carousel-control-prev-icon, 
+.card .carousel:hover .carousel-control-next-icon {
+  cursor: pointer;
+  opacity: .9;
+  
+}
 
 .card .carousel-inner {
   border-radius: 15px;
@@ -294,6 +317,8 @@ body {
   width: 0.5em;
   height: 0.5em;
 }
+
+
 
 /* TOP BAR NAV */
 
@@ -409,7 +434,6 @@ input[type="text"]:focus {
 #inspiration {
   background-color: #f7f7f7;
   border-bottom: solid 0.5px #e2e2e2;
-
 }
 
 .scroll-container {
@@ -518,6 +542,7 @@ footer ul {
   list-style: none;
   font-size: 18px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 footer ul li {
@@ -855,6 +880,7 @@ h3 {
   color: #222;
 }
 
+
 @media (max-width:1023px) {
 
   #rooms section .trophy {
@@ -957,4 +983,44 @@ h3 {
 .description .features-description p:first-of-type {
   background-color: #f7f7f7;
   padding: 1em;
+}
+
+.mapbtn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 100;
+  height: 50px;
+    width: 130px;
+    border-radius: 24px;
+    background: rgb(34, 34, 34);
+}
+.mapbtn:hover {
+  color:  rgb(34, 34, 34);
+  background-color:  rgb(34, 34, 34);
+  border-color:  rgb(34, 34, 34);
+  --bs-btn-active-bg: rgb(34, 34, 34) ;
+}
+.mapbtn span{
+  color: white;
+  font-weight: 400;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) { 
+  .mapbtn {
+      display: block;
+  }
+}
+
+.modal-content{
+      background-color: transparent;
+      border: transparent;
+}
+.modal-header{
+  border-bottom: transparent;
+}
+.modal-header .btn-close{
+  background-color: antiquewhite;
 }
