@@ -544,6 +544,7 @@ footer ul {
   list-style: none;
   font-size: 18px;
   padding: 0;
+  margin-bottom: 0;
 }
 footer ul li{
   padding-bottom: 1em;
