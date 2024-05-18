@@ -235,6 +235,32 @@ body {
   transition: transform .3s;
 }
 
+.save-btn {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding: .4em;
+  width: 33px;
+  height: 33px;
+  z-index: 1000;
+  top: 5%;
+  right: 5%;
+  opacity: .9;
+}
+
+.save-btn {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  padding: .4em;
+  width: 33px;
+  height: 33px;
+  z-index: 1000;
+  top: 5%;
+  right: 5%;
+  opacity: .9;
+}
+
 .card .carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
   
   transform: scale(1.1);
@@ -292,6 +318,8 @@ body {
   width: 0.5em;
   height: 0.5em;
 }
+
+
 
 /* TOP BAR NAV */
 
@@ -406,7 +434,7 @@ input[type="text"]:focus {
 
 #inspiration {
   background-color: #f7f7f7;
-  border-bottom: solid 0.5px #e2e2e2;
+  
   
 }
 
