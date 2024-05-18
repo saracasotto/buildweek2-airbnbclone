@@ -186,6 +186,7 @@ body {
   cursor: pointer;
 }
 
+/* CARD */
 
 .card {
   width: 100%;
@@ -193,24 +194,58 @@ body {
   border: none;
 }
 
+.carousel-control-prev {
+  left: 3%;
+}
+
+.carousel-control-next {
+  right: 3%;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: none;
   width: 2rem;
   height: 2rem;
-  background-repeat: no-repeat;
+  background-image: none;
+
+  
+  /* background-repeat: no-repeat;
   background-position: 50%;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+  
+}
+
 .card .carousel:hover  {
   cursor: pointer;
 }
 
+.carousel-control-next-icon img {
+  
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  opacity: .9;
+  background-color: rgb(235, 235, 235);
+  padding: .7em;
+  transition: transform .3s;
+}
 
+.carousel-control-next-icon:hover img {
+  background-color: white;
+  transform: scale(1.1);
+  opacity: 1;
+}
 
 .card .carousel:hover .carousel-control-prev-icon, .card .carousel:hover .carousel-control-next-icon {
   cursor: pointer;
   display: inline-block;
+  
 }
 
 
