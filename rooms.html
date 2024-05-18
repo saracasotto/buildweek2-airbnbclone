@@ -17,7 +17,7 @@
 </head>
 
 <body id="rooms">
-    <header class="container-fluid py-3 d-flex justify-content-between align-items-center">
+    <header class="container py-3 d-flex justify-content-between align-items-center">
         <div class="logo d-none d-md-block">
             <a href="index.html"><img src="assets/logo-pink.png" alt="logo"></a>
         </div>
@@ -80,7 +80,7 @@
         </div>
     </header>
     <main class="container" id="third-page">
-        <section class="d-flex justify-content-around align-items-center px-0 py-2">
+        <section class="container px-0 d-flex justify-content-between align-items-center py-2">
             <div id="left-nav">
                 <h1>Peaceful Traditional House in the Japanese Countryside</h1>
             </div>
@@ -495,12 +495,12 @@
             </div>
 
         </section>
-        <section class="container-fluid p-0 py-4">
+        <section class="container py-4">
             <div class="row">
-                <div class="description col-12 col-lg-7">
+                <div class="description col-12 col-lg-7 p-0">
                     <h2>Hut in Higashimurayama-shi, Japan</h2>
                     <h3>9 guests · 2 bedrooms · 2 beds · 1 bathroom</h3>
-                    <div class="container px-0 mt-5">
+                    <div class="container mt-5">
                         <div class="guest-favourite d-flex align-items-center justify-content-around">
                             <div class="trophy">
                                 <img src="assets/icons/1.avif" alt="">
@@ -570,7 +570,7 @@
                                     <br>
                                     <br><button type="button" class="btn" data-bs-toggle="modal"
                                         data-bs-target="#features-modal">
-                                        <u><b>Show more</b></u>
+                                        <u><b>Show more</b></u> >
                                     </button>
                                 <div class="modal fade" id="features-modal" tabindex="-1"
                                     aria-labelledby="features-modalLabel" aria-hidden="true">
@@ -611,22 +611,73 @@
                                 </p>
                             </div>
 
-                            <div class="features-list container-fluid p-0">
+                            <div class="features-list container-fluid p-0 pt-5">
                                 <h3>What this place offers</h3>
                                 <div class="row">
                                     <div class="col-12 col-xl-6">
                                         <ul>
                                             <li>
-                                                <span>Lista</span>
-                                                <span>Lista</span>
+                                                <span class="material-symbols-outlined">
+                                                    location_city
+                                                </span>
+                                                <span>City Skyline View</span>
                                             </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    water
+                                                </span>
+                                                <span>Lake access</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    wifi
+                                                </span>
+                                                <span>Wi-Fi</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    directions_car
+                                                </span>
+                                                <span>Free parking on premises</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    ac_unit
+                                                </span>
+                                                <span>Air conditioning</span>
+                                            </li>
+
                                         </ul>
                                     </div>
                                     <div class="d-none d-xl-block col-xl-6">
                                         <ul>
                                             <li>
-                                                <span>Lista</span>
-                                                <span>Lista</span>
+                                                <span class="material-symbols-outlined">kitchen</span>
+                                                <span>Kitchen</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    dishwasher
+                                                </span>
+                                                <span>Dishwasher</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    microwave
+                                                </span>
+                                                <span>Microwave</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    image
+                                                </span>
+                                                <span>Lake view</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    bathtub
+                                                </span>
+                                                <span>Bath</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -634,10 +685,152 @@
                             </div>
                         </div>
                     </div>
+                    <div class="calendar container mt-5 px-0">
+                        <h4>19 nights in Higashimurayama-shi</h4>
+                        <h5>1 oct 2024 - 20 oct 2024</h5>
+                        <div class="container mt-5 px-3 px-lg-0" id="calendar-container">
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-light">&lt;</button>
+                                        <h5>October 2024</h5>
+                                        <h5 class="d-none d-md-block">November 2024</h5>
+                                        <button class="btn btn-light">&gt;</button>
+                                    </div>
+                                    <div class="d-flex">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                    <th>Sun</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="bg-dark text-white">1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                    <td class="bg-dark text-white">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table d-none d-md-block text-center ">
+                                            <thead>
+                                                <tr>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                    <th>Sun</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-light mt-2">Clear dates</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-12 col-lg-5 m-0 p-0 booking-modal">
-                    <div class="sticky container mt-2 d-flex justify-content-center">
+                    <div class="sticky container ms-xl-5 mt-2 d-flex justify-content-center">
                         <div class="reservation-card p-4">
                             <div class="price">£102 <span class="text-muted" style="font-size: 16px;">night</span></div>
                             <hr>
@@ -683,6 +876,57 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="overall-rating"></div>
+            <p>4.97</p>
+            <div class="ratings-grid mt-5">
+                <div class="rating-item">
+                    <h6>Overall rating</h6>
+                    <div class="rating-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 95%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 6%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
+                        </div>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-item">
+                    <h6>Cleanliness</h6>
+                    <p>4.9</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Accuracy</h6>
+                    <p>4.9</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Check-in</h6>
+                    <p>4.9</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Communication</h6>
+                    <p>5.0</p>
+
+                </div>
+                <div class="rating-item">
+                    <h6>Location</h6>
+                    <p>4.8</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Value</h6>
+                    <p>4.9</p>
                 </div>
             </div>
         </section>
