@@ -245,7 +245,7 @@ body {
   padding: .4em;
   width: 35px;
   height: 35px;
-  z-index: 1000;
+  z-index: 800;
   top: 5%;
   right: 5%;
   opacity: .9;
@@ -527,10 +527,6 @@ input[type="text"]:focus {
   font-weight: 700;
 }
 
-.assistenza {
-  margin-left: 1em;
-}
-
 footer {
   background-color: #f7f7f7;
   width: 100%;
@@ -540,9 +536,16 @@ footer {
 
 footer ul {
   list-style: none;
-  font-size: 18px;
+  font-size: 0.9em;
   padding: 0;
   margin-bottom: 0;
+}
+
+footer ul h6 {
+  font-size: 1em;
+  font-weight: 800;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
 }
 
 footer ul li {
@@ -554,16 +557,7 @@ footer ul li:hover {
   text-decoration: underline;
 }
 
-footer h6 {
-  font-size: 18px;
-  font-weight: 800;
-  padding-bottom: .5em;
-  padding-top: .5em;
-}
-
-
-
-.assistenza .row div {
+.footer .row div {
   padding: 0;
 
 }
@@ -583,11 +577,15 @@ footer h6 {
   margin-right: 1em;
 }
 
-#top div p {
+#top div p,
+#top div i {
   margin: 0;
-  padding-left: .3em;
-  font-size: 18px;
+  font-size: 0.9em;
   font-weight: 700
+}
+
+#top div p {
+  padding: 0 0.3em;
 }
 
 #top div:nth-child(2) {
@@ -623,11 +621,11 @@ footer h6 {
 
 #foot ul li {
   padding-right: .9em;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 #foot div p {
-  font-size: 16px;
+  font-size: 0.9em;
   font-weight: 400;
 }
 
@@ -636,7 +634,7 @@ footer h6 {
   text-decoration: underline;
 }
 
-@media (min-width: 1200px) {
+@media (min-width:767px) and (max-width: 1199px) {
   #top {
     justify-content: center;
   }
@@ -644,6 +642,30 @@ footer h6 {
   #foot div {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  #end {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #foot  {
+  display: flex;
+  align-items: center;
+  }
+
+  #foot div p {
+    padding-right: 1em;
+  }
+}
+
+@media (max-width:575px) {
+  #end #foot ul {
+    flex-direction: column;
   }
 }
 
@@ -716,6 +738,14 @@ main .map iframe {
   nav {
     display: none;
   }
+
+  .results-title {
+    font-size: 0.9em;
+    font-weight: 800;
+    padding-top: 1em;
+    text-align: center;
+  }
+  
 
 }
 
