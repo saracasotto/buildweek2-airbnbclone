@@ -115,7 +115,7 @@ button.btn {
 }
 
 
-/*CAROUSEL*/
+/*ICONS CAROUSEL*/
 
 nav {
   position: relative;
@@ -194,16 +194,16 @@ body {
   border: none;
 }
 
-.carousel-control-prev {
+.card .carousel-control-prev {
   left: 3%;
 }
 
-.carousel-control-next {
+.card .carousel-control-next {
   right: 3%;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.card .carousel-control-prev-icon,
+.card .carousel-control-next-icon {
   display: none;
   width: 2rem;
   height: 2rem;
@@ -215,8 +215,8 @@ body {
   background-size: 100% 100%; */
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.card .carousel-control-prev,
+.card .carousel-control-next {
   opacity: 1;
   
 }
@@ -225,9 +225,9 @@ body {
   cursor: pointer;
 }
 
-.carousel-control-next-icon img, .carousel-control-prev-icon img {
-  height: 33px;
-  width: 33px;
+.card .carousel-control-next-icon img, .carousel-control-prev-icon img {
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   opacity: .9;
   background-color: white;
@@ -235,16 +235,16 @@ body {
   transition: transform .3s;
 }
 
-.carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
+.card .carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
   
   transform: scale(1.1);
   opacity: 1;
 }
 
-.card .carousel:hover .carousel-control-prev-icon, .card .carousel:hover .carousel-control-next-icon {
+.card .carousel:hover .carousel-control-prev-icon, 
+.card .carousel:hover .carousel-control-next-icon {
   cursor: pointer;
   display: inline-block;
-  
 }
 
 
