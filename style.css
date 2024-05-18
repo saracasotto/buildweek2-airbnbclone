@@ -776,7 +776,6 @@ main .map iframe {
 
 #rooms header {
   position: static;
-  padding: 10%;
 }
 
 
@@ -817,6 +816,10 @@ h2 {
 h3 {
   font-size: 1em;
   font-weight: 400;
+}
+
+.booking-modal {
+  align-items: end;
 }
 
 .sticky {
@@ -947,6 +950,9 @@ h3 {
   padding-top: 1.5em;
 }
 
+.description .row .col {
+  padding: 0;
+}
 
 .description .row .col-2 {
   text-align: center;
@@ -987,22 +993,8 @@ h3 {
     height: 25px;
   }
   
-  #rooms .description .row:nth-of-type(2) span img,
-  #rooms .description .row span i {
-    height: 0.9em;
-    width: 0.9em;
-    font-size: 0.9em
-  }
-  .description .row .col-10 p:first-of-type {
-    font-weight: bold;
-    font-size: 0.7em;
-  }
-  
-  .description .row .col-10 p:last-of-type {
-    font-size: 0.6em;
-    opacity: 0.9;
-  }
 }
+
 
 .description .features-description {
   padding-top: 2em;
@@ -1013,6 +1005,71 @@ h3 {
 .description .features-description p:first-of-type {
   background-color: #f7f7f7;
   padding: 1em;
+}
+
+.description .features-description .btn {
+  padding: 0;
+  font-size: 1em;
+}
+
+
+.description .features-list h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.description .features-list ul {
+  padding: 0;
+  margin: 0;
+}
+.description .features-list li {
+  list-style-type: none;
+  padding: 0.5em 0;
+  display: flex;
+  align-items: center;
+}
+
+.description .features-list li span:last-of-type {
+  padding: 0 1em ;
+}
+
+.calendar h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.calendar h5{
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+#calendar-container {
+  border-radius: 15px;
+}
+
+#calendar-container table {
+  table-layout: fixed;
+}
+
+#calendar-container button {
+  border-radius: 50%;
+}
+
+#calendar-container button:last-of-type {
+  border-radius: 15px;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+
+table th, table td {
+  width: 14.27%;
+  border: transparent;
+}
+ 
+table td:hover {
+  cursor: pointer;
+  background-color: #ddd;
 }
 
 .mapbtn {
@@ -1053,4 +1110,57 @@ h3 {
 }
 .modal-header .btn-close{
   background-color: antiquewhite;
+}
+
+
+.ratings-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.rating-item {
+  flex: 1 1 calc(14.28% - 20px); /* Each item takes approximately 1/7th of the container width */
+  text-align: start;
+}
+
+.rating-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.bar {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 6px;
+  margin: 3px 0;
+  position: relative;
+}
+
+.fill {
+  background-color: #222;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  width: 24px;
+  height: 24px;
 }
