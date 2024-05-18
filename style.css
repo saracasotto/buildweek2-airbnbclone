@@ -204,7 +204,8 @@ body {
 
 .card .carousel-control-prev-icon,
 .card .carousel-control-next-icon {
-  display: none;
+  display: block;
+  opacity: 0;
   width: 2rem;
   height: 2rem;
   background-image: none;
@@ -226,8 +227,8 @@ body {
 }
 
 .card .carousel-control-next-icon img, .carousel-control-prev-icon img {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   opacity: .9;
   background-color: white;
@@ -240,25 +241,17 @@ body {
   background-color: white;
   border-radius: 50%;
   padding: .4em;
-  width: 33px;
-  height: 33px;
+  width: 35px;
+  height: 35px;
   z-index: 1000;
   top: 5%;
   right: 5%;
   opacity: .9;
+  transition: transform .3s;
 }
-
-.save-btn {
-  position: absolute;
-  background-color: white;
-  border-radius: 50%;
-  padding: .4em;
-  width: 33px;
-  height: 33px;
-  z-index: 1000;
-  top: 5%;
-  right: 5%;
-  opacity: .9;
+.save-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .card .carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
@@ -267,10 +260,16 @@ body {
   opacity: 1;
 }
 
+.card .carousel .carousel-control-prev-icon, 
+.card .carousel .carousel-control-next-icon {
+  transition: opacity .4s;
+}
+
 .card .carousel:hover .carousel-control-prev-icon, 
 .card .carousel:hover .carousel-control-next-icon {
   cursor: pointer;
-  display: inline-block;
+  opacity: .9;
+  
 }
 
 
