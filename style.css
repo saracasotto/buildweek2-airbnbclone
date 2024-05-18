@@ -225,19 +225,18 @@ body {
   cursor: pointer;
 }
 
-.carousel-control-next-icon img {
-  
-  height: 35px;
-  width: 35px;
+.carousel-control-next-icon img, .carousel-control-prev-icon img {
+  height: 33px;
+  width: 33px;
   border-radius: 50%;
   opacity: .9;
-  background-color: rgb(235, 235, 235);
+  background-color: white;
   padding: .7em;
   transition: transform .3s;
 }
 
-.carousel-control-next-icon:hover img {
-  background-color: white;
+.carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
+  
   transform: scale(1.1);
   opacity: 1;
 }
