@@ -350,9 +350,6 @@ input[type="text"]:focus {
   outline: none;
 }
 
-
-
-
 .guests span i {
   color: white;
   font-weight: bold;
@@ -815,6 +812,11 @@ h3 {
   border-radius: 8px;
 }
 
+@media (max-width:997px) {
+  .booking-modal {
+    display: none;
+  }
+}
 
 .guest-favourite {
   border: 1px solid #ddd;
@@ -1078,36 +1080,53 @@ table td:hover {
 }
 
 @media (max-width: 767px) {
-  #rooms .reviews {
+  #rooms .reviews-container {
     background-color: rgba(252, 230, 234, 0.788);
   }
 
 }
 
-.reviews .overall-rating {
+.reviews-container .overall-rating {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.reviews .overall-rating .rating-number {
+.reviews-container .overall-rating .rating-number {
   margin: 0 auto;
   font-size: 5em;
   font-weight: bolder;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-
 }
 
-.reviews .overall-rating .rating-description {
+.reviews-container .overall-rating .rating-description {
   margin: 0 auto;
   font-size: 1.2em;
   line-height: 1.1em;
   opacity: 0.9;
   width: 400px;
+
+}
+
+@media (max-width: 767px) {
+  .reviews-container .overall-rating{
+    font-size: smaller;
+    margin: 0 auto;
+  }
+
+  .reviews-container .overall-rating .rating-number {
+    font-size: 4em;
+  }
+
+  .reviews-container .overall-rating .rating-description {
+    font-size: 1em;
+    width: 80%;
+    margin: 0 auto;
+
+  }
 
 }
 
@@ -1184,8 +1203,8 @@ h6 {
 
 .user-reviews .card {
   width: 50%;
-  margin: 0.8em;
   border-radius: 25px;
+  padding-right: 3em;
 }
 
 #rooms .user-reviews .card img {
@@ -1223,28 +1242,69 @@ h6 {
 #rooms .user-reviews .card-link {
   font-size: 1em;
   font-weight: 600;
+  color: #222;
 }
 
 
-
-@media (min-width: 576px) and (max-width:991px) {
+@media (min-width: 768px) and (max-width:991px) {
   .user-reviews .card {
     width: 100%;
   }
 }
 
-@media (max-width: 575px) {
-  .user-reviews.container {
-    overflow-x: scroll;
+@media (max-width: 767px) {
+  .user-reviews {
     display: flex;
     flex-wrap: nowrap;
+    overflow-x: scroll;
     scrollbar-width: none;
   }
 
   .user-reviews .card {
-    min-width: 90%;
+    padding: 0 0.8em;
+    margin: 0.5em;
+    min-width: 95%;
   }
 }
+
+@media (max-width: 575px) {
+  #rooms .user-reviews .stay-details span {
+    font-size: 0.8em;
+    padding-right: 0.8em;
+  } 
+  
+  #rooms .user-reviews .stay-details i {
+    font-size: 0.4em;
+  } 
+  
+  #rooms .user-reviews .card-text {
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+
+}
+
+.collapsed-booking {
+  width: 100%;
+  height: 15%;
+  background-color: white;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsed-booking .reserve-btn {
+  width: 100px;
+  text-align: center;
+}
+
+
+
 
 #spostaDiv {
   justify-content: center;
