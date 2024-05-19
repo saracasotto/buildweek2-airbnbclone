@@ -307,6 +307,7 @@ input[type="text"]:focus {
 
 .bar-container {
   width: 80%;
+  height: 80px;
   margin: 0 auto;
   border: 1px solid rgb(242, 242, 242);
   box-shadow: 0 0 5px hsl(0 0% 78%);
@@ -320,10 +321,7 @@ input[type="text"]:focus {
   overflow: visible;
 }
 
-.bar-container div {
-  border-radius: inherit;
-  padding: 0.8rem 1.5rem;
-}
+
 
 .bar-container > *:hover {
   background: hsl(0 0% 94%);
@@ -406,83 +404,6 @@ input[type="text"]:focus {
 .bar-container p {
   margin-bottom: 0;
 }
-
-/* NAV DROPDOWN */
-
-.link {
-  height: 100%;
-  background-color: none;
-  border: none;
-  text-decoration: none;
-  color: #777;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-}
-
-.drop {
-  position: relative;
-}
-
-.drop-container {
-  padding-left: 2em!important;
-}
-
-.drop-menu {
-  position: absolute;
-  left: 0;
-  top: calc(100%);
-  background-color: white;
-  padding: 0!important;
-  border-radius: .05rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  pointer-events: none;
-  transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-
-
-
-.drop > .link:focus + .drop-menu {
-  opacity: 1;
-  transform: translateY(3em);
-  pointer-events: auto;
-}
-
-.drop-container {
-  margin-top: .4em;
-  
-}
-
-.regions img {
-  padding: 0;
-  margin: 0;
-  width: 100px;
-  border: 1px solid black;
-}
-
-.regions div {
-  padding-right: 0;
-}
-
-.regions div:hover {
-  
-  border-radius: 20px;
-  background-color: #d0d0d0;
-}
-
-.regions {
-  padding-left: 0;
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 1;
-}
-
-
-
 
 
 /*ICONS CAROUSEL*/
@@ -702,8 +623,10 @@ nav {
   border-radius: inherit;
 }
 
-.bar-container div:hover {
+.bar-container button:hover {
   background: hsl(0 0% 94%);
+  height: 80px;
+  border-radius: 50px;
 }
 
 .bar-container button{
