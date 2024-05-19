@@ -17,105 +17,133 @@
 </head>
 
 <body>
-    <header class="container-fluid px-5 py-3 d-flex justify-content-between align-items-center">
-        <div class="logo d-none d-md-block">
-            <a href="index.html"><img src="assets/logo-pink.png" alt="logo"></a>
-        </div>
-        <div id="top-bar" class="flex-grow-1 d-flex justify-content-center">
-            <div class="bar-container">
-                <div class="location">
-
-
-                    <div class="drop" >
-                        <button class="link">
-                            <p>Where</p>    
-                            <input type="text" placeholder="Search">
+    <header class="container-fluid align-items-center hdr sticky-top ">
+        <div class="d-flex container p-2 ">
+            <div class="logo d-none d-md-block">
+                <a href="index.html"><img src="assets/logo-pink.png" alt="logo"></a>
+            </div>
+            <div class="container-fluid d-flex align-items-baseline ">
+                <div class="container-fluid " id="spostaDiv">
+                    <div>
+                        <button>
+                        <p>
+                            Stays
+                        </p>
                         </button>
-                        <div class="drop-menu">
-                            <div class="drop-container">
-                                <h3>Search by region</h3>
-                                <div class="regions">
-                                    <div>
-                                        <img src="assets/images/114662950-global-map.jpg" alt="">
-                                        <p>I'm flexible</p>
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/114662950-global-map.jpg" alt="">
-                                        <p>I'm flexible</p>
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/114662950-global-map.jpg" alt="">
-                                        <p>I'm flexible</p>
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/114662950-global-map.jpg" alt="">
-                                        <p>I'm flexible</p>
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/114662950-global-map.jpg" alt="">
-                                        <p>I'm flexible</p>
-                                    </div>
-                                    <div>
-                                        <img src="assets/images/114662950-global-map.jpg" alt="">
-                                        <p>I'm flexible</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div>
+                        <button>
+                        <p>
+                            Experiences
+                        </p>
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                        <p>
+                            Online Experiences
+                        </p>
+                        </button>
                     </div>
                 </div>
 
-                <!-- <div class="check-out link">
-                    <p>Check-out</p>
-                    <input type="text" placeholder="Add dates">
+                <div class="user d-none d-md-flex align-items-center">
+                    <div style="width: 130px;">
+                        <p>Airbnb your home</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="guests link">
-                    <p>Who</p>
-                    <input type="text" placeholder="Add guests">
-                    <span><i class="bi bi-search"></i></span>
-                </div> -->
+
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-offset="1,10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" style="z-index: 1021;">
+                        <li><button class="dropdown-item" type="button"><b>Sign up</b></button></li>
+                        <li><button class="dropdown-item" type="button">Log in</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><button class="dropdown-item" type="button">Gift Cards</button></li>
+                        <li><button class="dropdown-item" type="button">Airbnb your home</button></li>
+                        <li><button class="dropdown-item" type="button">Help center</button></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <div class="user d-none d-md-flex justify-content-between align-items-center">
-            <span>Airbnb your home</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe"
-                viewBox="0 0 16 16">
-                <path
-                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-            </svg>
-
-            <div class="btn-group">
-                <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-offset="1,10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
-
+        <div class="d-flex justify-content-center" style="margin-bottom: 1%;">
+            <div class="bar-container">
+                <div>
+                <button>
+                    <div>
+                    <p>Where</p>
+                    </div>
+                    <div>
+                    <input type="text" placeholder="Search destinations" style="padding: 0 !important;">
+                    </div>
+                </label>
+                </div>
+                <div>
+                <button>
+                    <div>
+                    <p>Check-in</p>
+                    </div>
+                    <div>
+                        <p>Add dates</p>
+                    </div>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><button class="dropdown-item" type="button"><b>Sign up</b></button></li>
-                    <li><button class="dropdown-item" type="button">Log in</button></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><button class="dropdown-item" type="button">Gift Cards</button></li>
-                    <li><button class="dropdown-item" type="button">Airbnb your home</button></li>
-                    <li><button class="dropdown-item" type="button">Help center</button></li>
-                </ul>
+                </div>
+                <div>
+                <button>
+                    <div>
+                    <p>Check-out</p>
+                    </div>
+                    <div>
+                        <p>Add dates</p>
+                    </div>
+                </button>
+                </div>
+                <div class="d-flex ">
+                <button>
+                    <div>
+                    <div>
+                    <p>Who</p>
+                    </div>
+                    <div>
+                        <p>Add guests</p>
+                    </div>
+                </button>
+                <div style="background-color: #FF385C; width: 43px;">
+                    <button style="padding-top: 20%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
+                    </button>
+                </div>
+                </div>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- ICONE CAROSELLO SOTTO NAV-->
-    <nav class="container-fluid px-5">
+        </div>
+            <!-- ICONE CAROSELLO SOTTO NAV-->
+    <nav class="container-fluid px-5 sticky-top ">
         <div id="iconsCarousel" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active ">
@@ -286,15 +314,18 @@
             <img src="assets/icons/right.png" alt="">
         </button>
     </nav>
+    </header>
+
+
     <main class="container-fluid p-0 d-flex flex-column align-items-center justify-content-center">
-        
+
         <!-- INIT OF CARD -->
-        
-        <section class="container-fluid px-4 px-sm-3 my-3 py-3">
+
+        <section class="container-fluid px-3 px-sm-5 my-3 py-3">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
                     <div class="card">
-                        
+
                         <div id="carousel1" class="carousel slide">
                             <img class="save-btn" src="assets/icons/upload.svg" alt="">
                             <div class="carousel-indicators">
@@ -471,7 +502,7 @@
             </div>
         </section>
 
-        <section class="container-fluid px-4 px-sm-3 my-3 py-3">
+        <section class="container-fluid px-3 px-sm-5 my-3 py-3">
             <h2>Past Experiences</h2>
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-3">
@@ -648,7 +679,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid px-4 px-sm-3 py-5" id="inspiration">
+        <section class="container-fluid px-3 px-sm-5 py-5" id="inspiration">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col p-0">
@@ -1478,108 +1509,98 @@
 
     </main>
 
-    <hr class="m-0 ms-3 me-3">
+    <footer class="container-fluid px-3 px-sm-5 py-5">
+        <div class="row">
+            <div class="col-12 col-xl-4">
+                <ul>
+                    <h6>Support</h6>
+                    <li>
+                        Help Centre
+                    </li>
+                    <li>
+                        AirCover
+                    </li>
+                    <li>
+                        Anti-discrimination
+                    </li>
+                    <li>
+                        Disability support
+                    </li>
+                    <li>
+                        Cancellation options
+                    </li>
+                    <li>
+                        Report neighbourhood concern
+                    </li>
+                    <hr>
+                </ul>
 
-    <footer class="container-fluid">
-        <div class="assistenza pt-3">
-            <div class="row">
-                <div class="col-12 col-xl-4">
-                    <ul>
-                        <h6>Support</h6>
-                        <li>
-                            Help Centre
-                        </li>
-                        <li>
-                            AirCover
-                        </li>
-                        <li>
-                            Anti-discrimination
-                        </li>
-                        <li>
-                            Disability support
-                        </li>
-                        <li>
-                            Cancellation options
-                        </li>
-                        <li>
-                            Report neighbourhood concern
-                        </li>
-                        <hr>
-                    </ul>
-                    
-                </div>
-                
-                <div class="col-12 col-xl-4">
-                    <ul>
-                        <h6>Hosting</h6>
-                        <li>
-                            Airbnb your home
-                        </li>
-                        <li>
-                            AirCover for Hosts
-                        </li>
-                        <li>
-                            Hosting resources
-                        </li>
-                        <li>
-                            Community forum
-                        </li>
-                        <li>
-                            Hosting responsibly
-                        </li>
-                        <li>
-                            Join a free Hosting class
-                        </li>
-                        <hr>
-                    </ul>
-                    
-                </div>
-                
-                <div class="col-12 col-xl-4">
-                    <ul>
-                        <h6>Airbnb</h6>
-                        <li>
-                            Newsroom
-                        </li>
-                        <li>
-                            New features
-                        </li>
-                        <li>
-                            Careers
-                        </li>
-                        <li>
-                            Investors
-                        </li>
-                        <li>
-                            Gift cards
-                        </li>
-                        <li>
-                            Airbnb.org emergency stays
-                        </li>
-                        <hr>
-                    </ul>
-                    
-                </div>
-                
-    
             </div>
-        </div>
 
+            <div class="col-12 col-xl-4">
+                <ul>
+                    <h6>Hosting</h6>
+                    <li>
+                        Airbnb your home
+                    </li>
+                    <li>
+                        AirCover for Hosts
+                    </li>
+                    <li>
+                        Hosting resources
+                    </li>
+                    <li>
+                        Community forum
+                    </li>
+                    <li>
+                        Hosting responsibly
+                    </li>
+                    <li>
+                        Join a free Hosting class
+                    </li>
+                    <hr>
+                </ul>
+
+            </div>
+
+            <div class="col-12 col-xl-4">
+                <ul>
+                    <h6>Airbnb</h6>
+                    <li>
+                        Newsroom
+                    </li>
+                    <li>
+                        New features
+                    </li>
+                    <li>
+                        Careers
+                    </li>
+                    <li>
+                        Investors
+                    </li>
+                    <li>
+                        Gift cards
+                    </li>
+                    <li>
+                        Airbnb.org emergency stays
+                    </li>
+                    <hr>
+                </ul>
+
+            </div>
+
+        </div>
         <div id="end">
             <div id="top">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                    </svg>
+                    <i class="bi bi-globe"></i>
                     <p>English (GB)</p>
                 </div>
                 <div>
                     <span>£</span>
                     <p>GBP</p>
                 </div>
-                <div class="d-none d-xl-block icons">
+                <div class="d-none d-md-block icons">
                     <img src="assets/icons/facebook-square-social-logo-svgrepo-com.svg" alt="">
                     <img src="assets/icons/twitter-square-logo-svgrepo-com.svg" alt="">
                     <img src="assets/icons/instagram-svgrepo-com.svg" alt="">
@@ -1590,7 +1611,7 @@
                     <p>© 2024 Airbnb, Inc.</p>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="d-flex">
                         <li>Privacy</li>
                         <li>Terms</li>
                         <li>Sitemap</li>
@@ -1600,14 +1621,14 @@
                 </div>
             </div>
         </div>
-        
-       
+
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script>
         document.querySelectorAll('.card .carousel-item img').forEach((img) => {
             img.addEventListener('click', function (event) {

@@ -17,70 +17,307 @@
 </head>
 
 <body id="rooms">
-    <header class="container-fluid py-3 d-flex justify-content-between align-items-center">
-        <div class="logo d-none d-md-block">
-            <a href="index.html"><img src="assets/logo-pink.png" alt="logo"></a>
+    <header class="container-fluid align-items-center hdr sticky-top ">
+        <div class="d-flex container p-2 ">
+            <div class="logo d-none d-md-block">
+                <a href="index.html"><img src="assets/logo-pink.png" alt="logo"></a>
+            </div>
+            <div class="container-fluid d-flex align-items-baseline ">
+                <div class="container-fluid " id="spostaDiv">
+                    <div>
+                        <button>
+                        <p>
+                            Stays
+                        </p>
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                        <p>
+                            Experiences
+                        </p>
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                        <p>
+                            Online Experiences
+                        </p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="user d-none d-md-flex align-items-center">
+                    <div style="width: 130px;">
+                        <p>Airbnb your home</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-offset="1,10">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" style="z-index: 1021;">
+                        <li><button class="dropdown-item" type="button"><b>Sign up</b></button></li>
+                        <li><button class="dropdown-item" type="button">Log in</button></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><button class="dropdown-item" type="button">Gift Cards</button></li>
+                        <li><button class="dropdown-item" type="button">Airbnb your home</button></li>
+                        <li><button class="dropdown-item" type="button">Help center</button></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="top-bar" class="flex-grow-1 d-flex justify-content-center">
+        <div class="d-flex justify-content-center" style="margin-bottom: 1%;">
             <div class="bar-container">
-                <div class="location">
+                <div>
+                <button>
+                    <div>
                     <p>Where</p>
-                    <input type="text" placeholder="Search destinations">
+                    </div>
+                    <div>
+                    <input type="text" placeholder="Search destinations" style="padding: 0 !important;">
+                    </div>
+                </label>
                 </div>
-                <div class="check-in">
+                <div>
+                <button>
+                    <div>
                     <p>Check-in</p>
-                    <input type="text" placeholder="Add dates">
-                </div>
-                <div class="check-out">
-                    <p>Check-out</p>
-                    <input type="text" placeholder="Add dates">
-                </div>
-                <div class="guests">
-                    <p>Who</p>
-                    <input type="text" placeholder="Add guests">
-                    <span><i class="bi bi-search"></i></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="user d-none d-md-flex justify-content-between align-items-center">
-            <span>Airbnb your home</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe"
-                viewBox="0 0 16 16">
-                <path
-                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-            </svg>
-
-            <div class="btn-group">
-                <button type="button" class="btn" data-bs-toggle="dropdown" data-bs-offset="1,10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-person-circle" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                    </svg>
-
+                    </div>
+                    <div>
+                        <p>Add dates</p>
+                    </div>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><button class="dropdown-item" type="button"><b>Sign up</b></button></li>
-                    <li><button class="dropdown-item" type="button">Log in</button></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><button class="dropdown-item" type="button">Gift Cards</button></li>
-                    <li><button class="dropdown-item" type="button">Airbnb your home</button></li>
-                    <li><button class="dropdown-item" type="button">Help center</button></li>
-                </ul>
+                </div>
+                <div>
+                <button>
+                    <div>
+                    <p>Check-out</p>
+                    </div>
+                    <div>
+                        <p>Add dates</p>
+                    </div>
+                </button>
+                </div>
+                <div class="d-flex ">
+                <button>
+                    <div>
+                    <div>
+                    <p>Who</p>
+                    </div>
+                    <div>
+                        <p>Add guests</p>
+                    </div>
+                </button>
+                <div style="background-color: #FF385C; width: 43px;">
+                    <button style="padding-top: 20%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
+                    </button>
+                </div>
+                </div>
+                </div>
             </div>
         </div>
+        </div>
+            <!-- ICONE CAROSELLO SOTTO NAV-->
+    <nav class="container-fluid px-5 sticky-top ">
+        <div id="iconsCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    local_activity
+                                </span>
+                                <p>Icon</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    landscape
+                                </span>
+                                <p>Countryside</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    pool
+                                </span>
+                                <p>Pool</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    rocket
+                                </span>
+                                <p>Wow</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    piano
+                                </span>
+                                <p>Piano</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    nature
+                                </span>
+                                <p>Park</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    castle
+                                </span>
+                                <p>Castle</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    sailing
+                                </span>
+                                <p>Boats</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    coffee
+                                </span>
+                                <p>B&B</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    kayaking
+                                </span>
+                                <p>Lake</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    sports_golf
+                                </span>
+                                <p>Golf</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    downhill_skiing
+                                </span>
+                                <p>Skiing</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    key
+                                </span>
+                                <p>New</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    ac_unit
+                                </span>
+                                <p>North Pole</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span>
+                                <p>Trending</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    cabin
+                                </span>
+                                <p>Cabins</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    surfing
+                                </span>
+                                <p>Surf</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    beach_access
+                                </span>
+                                <p>Beach</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    self_improvement
+                                </span>
+                                <p>Relax</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    location_city
+                                </span>
+                                <p>City</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    local_dining
+                                </span>
+                                <p>Kitchen</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    landscape_2
+                                </span>
+                                <p>Mountain</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    attractions
+                                </span>
+                                <p>Attractions</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    festival
+                                </span>
+                                <p>Festival</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#iconsCarousel" data-bs-slide="prev">
+            <img src="assets/icons/left.png" alt="">
+        </button>
+        <!-- Pulsante successivo -->
+        <button class="carousel-control-next" type="button" data-bs-target="#iconsCarousel" data-bs-slide="next">
+            <img src="assets/icons/right.png" alt="">
+        </button>
+    </nav>
     </header>
+    
     <main class="container" id="third-page">
-        <section class="d-flex justify-content-between align-items-center py-2">
+        <section class="container px-0 d-flex justify-content-between align-items-center py-2">
             <div id="left-nav">
                 <h1>Peaceful Traditional House in the Japanese Countryside</h1>
             </div>
@@ -110,243 +347,920 @@
         <section class="container">
             <div class="row" id="img-container">
                 <div class="col-6 p-0 pe-2">
-                    <img src="assets/Cards/PAGE2/final/1.webp" class="img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <img src="assets/Cards/PAGE2/final/1.webp" class="img-fluid" alt=""
+                        data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col-6 p-0 pe-2">
-                            <img src="assets/Cards/PAGE2/final/2.webp" class="img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <img src="assets/Cards/PAGE2/final/2.webp" class="img-fluid" alt=""
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                         </div>
                         <div class="col-6 p-0">
-                            <img src="assets/Cards/PAGE2/final/3.webp" class="img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <img src="assets/Cards/PAGE2/final/3.webp" class="img-fluid" alt=""
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                         </div>
                     </div>
                     <div class="row pt-2">
                         <div class="col-6 p-0 pe-2">
-                            <img src="assets/Cards/PAGE2/final/4.jpg" class="img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <img src="assets/Cards/PAGE2/final/4.jpg" class="img-fluid" alt=""
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                         </div>
                         <div class="col-6 p-0">
-                            <img src="assets/Cards/PAGE2/final/5.jpg" class="img-fluid" alt="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <img src="assets/Cards/PAGE2/final/5.jpg" class="img-fluid" alt=""
+                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
                         </div>
                     </div>
                 </div>
             </div>
-
-             <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/Cards/PAGE2/final/1.webp" class="d-block" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/Cards/PAGE2/final/2.webp" class="d-block" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/Cards/PAGE2/final/3.webp" class="d-block" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/Cards/PAGE2/final/4.jpg" class="d-block" alt="">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/Cards/PAGE2/final/5.jpg" class="d-block" alt="">
-                  </div>
+            <!--FIRST MODAL-->
+            <div class="modal" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body bg-white  d-flex flex-wrap ">
+                            
+                            <div>
+                                <img src="assets/Nestedmodal/NM6.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM7.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM8.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM9.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM10.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM11.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM12.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM13.jpg" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM14.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM15.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM16.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM17.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM18.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM19.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM20.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM21.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM22.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM23.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM24.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM25.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM26.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM27.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM28.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM29.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM30.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM31.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM32.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM33.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM34.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM35.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM36.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM37.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM38.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM39.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM40.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM41.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM42.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM43.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM44.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM45.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM46.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM47.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM48.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM49.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                            <div>
+                                <img src="assets/Nestedmodal/NM50.webp" alt="" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </div>
+            <!--SECOND MODAL-->
+            <div class="modal" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn" data-bs-target="#exampleModalToggle"
+                                data-bs-toggle="modal"><img src="assets/icons/left.png" alt=""></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="assets/Nestedmodal/NM6.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM7.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM8.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM9.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM10.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM11.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM12.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM13.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM14.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM15.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM16.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM17.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM18.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM19.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM20.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM21.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM22.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM23.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM24.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM25.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM26.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM27.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM28.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM29.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM30.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM31.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM32.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM33.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM34.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM35.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM36.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM37.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM38.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM39.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM40.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM41.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM42.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM43.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM44.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM45.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM46.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM47.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM48.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM49.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/Nestedmodal/NM50.webp" class="d-block w-100" alt="...">
+                                  </div>
+
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
-        <section class="container p-0 py-4 d-flex">
-            <div class="description">
-                <h2>Hut in Higashimurayama-shi, Japan</h2>
-                <h3>9 guests · 2 bedrooms · 2 beds · 1 bathroom</h3>
+        <section class="container py-4">
+            <div class="row">
+                <div class="description col-12 col-lg-7 p-0">
+                    <h2>Hut in Higashimurayama-shi, Japan</h2>
+                    <h3>9 guests · 2 bedrooms · 2 beds · 1 bathroom</h3>
+                    <div class="container mt-5">
+                        <div class="guest-favourite d-flex align-items-center justify-content-around">
+                            <div class="trophy">
+                                <img src="assets/icons/1.avif" alt="">
+                                <span>Guest <br>favourite</span>
+                                <img src="assets/icons/2.avif" alt="">
+                            </div>
+                            <div class="d-none d-xl-flex flex-column">
+                                <span>One of the most loved homes on</span>
+                                <span>Airbnb, according to guests</span>
+                            </div>
+                            <div class="rating">
+                                <span>4.97</span>
+                                <span>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                            </div>
+                            <div class="reviews">
+                                <span>70</span>
+                                <a href="#">Reviews</a>
+                            </div>
+                        </div>
 
-                <div class="container mt-5">
-                    <div class="guest-favourite">
-                        <div class="icon-text d-flex align-items-center">
-                            <div class="font-weight-bold">Guest favourite</div>
-                            <div>One of the most loved homes on Airbnb, according to guests</div>
+                        <div class="container-fluid list-group mt-5">
+                            <div class="row">
+                                <span class="col-2"><img src="assets/person4.jpg" alt=""></span>
+                                <span class="col-10">
+                                    <p>Hosted by Hotaka</p>
+                                    <p>Super Host · 9 years hosting</p>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="col-2"><img src="assets/icons/trophy.avif" alt=""></span>
+                                <span class="col-10">
+                                    <p>Top 10% of Homes</p>
+                                    <p>This home is highly ranked based on ratings, reviews and reliability.</p>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="col-2"><i class="bi bi-person-workspace"></i></span>
+                                <span class="col-10">
+                                    <p>Dedicated workspace</p>
+                                    <p>A common area with wifi that’s well suited for working.
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="col-2"><i class="bi bi-calendar-event"></i></span>
+                                <span class="col-10">
+                                    <p>Free cancellation for 48 hours</p>
+                                    <p>Get a full refund if you change your mind.</p>
+                                </span>
+                            </div>
+                            </ul>
+
+                            <div class="features-description">
+                                <p>Some info has been automatically translated. <a href="#"><u><b>Show
+                                                original</b></u></a>
+                                </p>
+                                <p>Peaceful and spacious traditional Japanese old house in Tokyo.
+                                    <br>Like a cinema. With TOTORO's mountain & big lake!
+                                    <br>You can use this house only for yourself
+                                    <br>5 rooms, kitchen and bathroom.
+                                    <br>
+                                    <br><button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#features-modal">
+                                        <u><b>Show more</b></u> >
+                                    </button>
+                                <div class="modal fade" id="features-modal" tabindex="-1"
+                                    aria-labelledby="features-modalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content bg-white rounded p-4">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="features-modalLabel">Peaceful
+                                                    Traditional
+                                                    House in the Japanese Countryside</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="features-body">
+                                                <p>Peaceful and spacious traditional Japanese old house in Tokyo.
+                                                    <br>Like a cinema. With TOTORO's mountain & big lake!
+                                                    <br>You can use this house only for yourself
+                                                    <br>5 rooms, kitchen and bathroom.
+
+                                                    <br>At only 5 minutes walk you will find:
+                                                <ul>
+                                                    <li>Amusement park</li>
+                                                    <li>Water park</li>
+                                                    <li>Skating park</li>
+                                                    <li>Two train stations (Seibuen & Seibu Yuenchi)</li>
+                                                    <li>Super Market</li>
+                                                    <li>Cafes & Restaurants nearby</li>
+                                                    <li>20000 Cherry Blossoms</li>
+                                                </ul>
+
+                                                <br><b>Shinjuku Station at only 35 minute by train</b>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                </p>
+                            </div>
+
+                            <div class="features-list container-fluid p-0 pt-5">
+                                <h3>What this place offers</h3>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6">
+                                        <ul>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    location_city
+                                                </span>
+                                                <span>City Skyline View</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    water
+                                                </span>
+                                                <span>Lake access</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    wifi
+                                                </span>
+                                                <span>Wi-Fi</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    directions_car
+                                                </span>
+                                                <span>Free parking on premises</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    ac_unit
+                                                </span>
+                                                <span>Air conditioning</span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="d-none d-xl-block col-xl-6">
+                                        <ul>
+                                            <li>
+                                                <span class="material-symbols-outlined">kitchen</span>
+                                                <span>Kitchen</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    dishwasher
+                                                </span>
+                                                <span>Dishwasher</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    microwave
+                                                </span>
+                                                <span>Microwave</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    image
+                                                </span>
+                                                <span>Lake view</span>
+                                            </li>
+                                            <li>
+                                                <span class="material-symbols-outlined">
+                                                    bathtub
+                                                </span>
+                                                <span>Bath</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="rating">
-                            <span class="font-weight-bold">4.97</span>
-                            <span>
-                            </span>
+                    </div>
+                    <div class="calendar container mt-5 px-0">
+                        <h4>19 nights in Higashimurayama-shi</h4>
+                        <h5>1 oct 2024 - 20 oct 2024</h5>
+                        <div class="container mt-5 px-3 px-lg-0" id="calendar-container">
+                            <div class="row">
+                                <div class="col-12 px-0">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-light">&lt;</button>
+                                        <h5>October 2024</h5>
+                                        <h5 class="d-none d-md-block">November 2024</h5>
+                                        <button class="btn btn-light">&gt;</button>
+                                    </div>
+                                    <div class="d-flex">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                    <th>Sun</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td class="bg-dark text-white">1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                    <td class="bg-dark text-white">20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table d-none d-md-block text-center ">
+                                            <thead>
+                                                <tr>
+                                                    <th>Mon</th>
+                                                    <th>Tue</th>
+                                                    <th>Wed</th>
+                                                    <th>Thu</th>
+                                                    <th>Fri</th>
+                                                    <th>Sat</th>
+                                                    <th>Sun</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18</td>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>25</td>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-light mt-2">Clear dates</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="reviews">
-                            <span>70</span>
-                            <a href="#">Reviews</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 m-0 p-0 booking-modal">
+                    <div class="sticky container ms-xl-5 mt-2 d-flex justify-content-center">
+                        <div class="reservation-card p-4">
+                            <div class="price">£102 <span class="text-muted" style="font-size: 16px;">night</span></div>
+                            <hr>
+                            <div class="d-flex justify-content-between reservation-details mb-3">
+                                <div>
+                                    <small>CHECK-IN</small>
+                                    <div>01/10/2024</div>
+                                </div>
+                                <div>
+                                    <small>CHECKOUT</small>
+                                    <div>20/10/2024</div>
+                                </div>
+                            </div>
+                            <div class="reservation-details mb-3">
+                                <small>GUESTS</small>
+                                <select class="form-control">
+                                    <option>1 guest</option>
+                                    <option>2 guests</option>
+                                    <option>3 guests</option>
+                                    <option>4 guests</option>
+                                    <option>5 guests</option>
+                                    <option>6 guests</option>
+                                    <option>7 guests</option>
+                                    <option>8 guests</option>
+                                    <option>9 guests</option>
+                                </select>
+                            </div>
+                            <button class="reserve-btn mb-3">Reserve</button>
+                            <div class="text-center reservation-details">You won't be charged yet</div>
+                            <hr>
+                            <div class="d-flex justify-content-between reservation-details">
+                                <div><u>£102 x 19 nights</u></div>
+                                <div>£1,930</div>
+                            </div>
+                            <div class="d-flex justify-content-between reservation-details">
+                                <div><u>Airbnb service fee</u></div>
+                                <div>£353</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between total-price">
+                                <div>Total</div>
+                                <div>£2,283</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="booking-modal">
-                <div class="container mt-5 d-flex justify-content-center">
-                    <div class="reservation-card p-4 border">
-                        <div class="price">£102 <span class="text-muted" style="font-size: 16px;">night</span></div>
-                        <hr>
-                        <div class="d-flex justify-content-between reservation-details mb-3">
-                            <div>
-                                <small>CHECK-IN</small>
-                                <div>01/10/2024</div>
-                            </div>
-                            <div>
-                                <small>CHECKOUT</small>
-                                <div>20/10/2024</div>
-                            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="overall-rating"></div>
+            <p>4.97</p>
+            <div class="ratings-grid mt-5">
+                <div class="rating-item">
+                    <h6>Overall rating</h6>
+                    <div class="rating-bar">
+                        <div class="bar">
+                            <div class="fill" style="width: 95%;"></div>
                         </div>
-                        <div class="reservation-details mb-3">
-                            <small>GUESTS</small>
-                            <select class="form-control">
-                                <option>1 guest</option>
-                                <option>2 guests</option>
-                                <option>3 guests</option>
-                                <option>4 guests</option>
-                                <option>5 guests</option>
-                                <option>6 guests</option>
-                                <option>7 guests</option>
-                                <option>8 guests</option>
-                                <option>9 guests</option>
-                            </select>
+                        <div class="bar">
+                            <div class="fill" style="width: 6%;"></div>
                         </div>
-                        <button class="reserve-btn mb-3">Reserve</button>
-                        <div class="text-center reservation-details">You won't be charged yet</div>
-                        <hr>
-                        <div class="d-flex justify-content-between reservation-details">
-                            <div><u>£102 x 19 nights</u></div>
-                            <div>£1,930</div>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
                         </div>
-                        <div class="d-flex justify-content-between reservation-details">
-                            <div><u>Airbnb service fee</u></div>
-                            <div>£353</div>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
                         </div>
-                        <hr>
-                        <div class="d-flex justify-content-between total-price">
-                            <div>Total</div>
-                            <div>£2,283</div>
+                        <div class="bar">
+                            <div class="fill" style="width: 0%;"></div>
                         </div>
                     </div>
+                </div>
+                <div class="rating-item">
+                    <h6>Cleanliness</h6>
+                    <p>4.9</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Accuracy</h6>
+                    <p>4.9</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Check-in</h6>
+                    <p>4.9</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Communication</h6>
+                    <p>5.0</p>
+
+                </div>
+                <div class="rating-item">
+                    <h6>Location</h6>
+                    <p>4.8</p>
+                </div>
+                <div class="rating-item">
+                    <h6>Value</h6>
+                    <p>4.9</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <hr class="m-0 ">
+    <footer class="container-fluid px-3 px-sm-5 py-5">
+        <div class="row">
+            <div class="col-12 col-xl-4">
+                <ul>
+                    <h6>Support</h6>
+                    <li>
+                        Help Centre
+                    </li>
+                    <li>
+                        AirCover
+                    </li>
+                    <li>
+                        Anti-discrimination
+                    </li>
+                    <li>
+                        Disability support
+                    </li>
+                    <li>
+                        Cancellation options
+                    </li>
+                    <li>
+                        Report neighbourhood concern
+                    </li>
+                    <hr>
+                </ul>
 
-    <footer class="container-fluid">
-        <div class="assistenza pt-3">
-            <div class="row">
-                <div class="col-12 col-xl-4">
-                    <ul>
-                        <h6>Support</h6>
-                        <li>
-                            Help Centre
-                        </li>
-                        <li>
-                            AirCover
-                        </li>
-                        <li>
-                            Anti-discrimination
-                        </li>
-                        <li>
-                            Disability support
-                        </li>
-                        <li>
-                            Cancellation options
-                        </li>
-                        <li>
-                            Report neighbourhood concern
-                        </li>
-                        <hr>
-                    </ul>
-                    
-                </div>
-                
-                <div class="col-12 col-xl-4">
-                    <ul>
-                        <h6>Hosting</h6>
-                        <li>
-                            Airbnb your home
-                        </li>
-                        <li>
-                            AirCover for Hosts
-                        </li>
-                        <li>
-                            Hosting resources
-                        </li>
-                        <li>
-                            Community forum
-                        </li>
-                        <li>
-                            Hosting responsibly
-                        </li>
-                        <li>
-                            Join a free Hosting class
-                        </li>
-                        <hr>
-                    </ul>
-                    
-                </div>
-                
-                <div class="col-12 col-xl-4">
-                    <ul>
-                        <h6>Airbnb</h6>
-                        <li>
-                            Newsroom
-                        </li>
-                        <li>
-                            New features
-                        </li>
-                        <li>
-                            Careers
-                        </li>
-                        <li>
-                            Investors
-                        </li>
-                        <li>
-                            Gift cards
-                        </li>
-                        <li>
-                            Airbnb.org emergency stays
-                        </li>
-                        <hr>
-                    </ul>
-                    
-                </div>
-                
-    
             </div>
-        </div>
 
+            <div class="col-12 col-xl-4">
+                <ul>
+                    <h6>Hosting</h6>
+                    <li>
+                        Airbnb your home
+                    </li>
+                    <li>
+                        AirCover for Hosts
+                    </li>
+                    <li>
+                        Hosting resources
+                    </li>
+                    <li>
+                        Community forum
+                    </li>
+                    <li>
+                        Hosting responsibly
+                    </li>
+                    <li>
+                        Join a free Hosting class
+                    </li>
+                    <hr>
+                </ul>
+
+            </div>
+
+            <div class="col-12 col-xl-4">
+                <ul>
+                    <h6>Airbnb</h6>
+                    <li>
+                        Newsroom
+                    </li>
+                    <li>
+                        New features
+                    </li>
+                    <li>
+                        Careers
+                    </li>
+                    <li>
+                        Investors
+                    </li>
+                    <li>
+                        Gift cards
+                    </li>
+                    <li>
+                        Airbnb.org emergency stays
+                    </li>
+                    <hr>
+                </ul>
+
+            </div>
+
+        </div>
         <div id="end">
             <div id="top">
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
-                    </svg>
+                    <i class="bi bi-globe"></i>
                     <p>English (GB)</p>
                 </div>
                 <div>
                     <span>£</span>
                     <p>GBP</p>
                 </div>
-                <div class="d-none d-xl-block icons">
+                <div class="d-none d-md-block icons">
                     <img src="assets/icons/facebook-square-social-logo-svgrepo-com.svg" alt="">
                     <img src="assets/icons/twitter-square-logo-svgrepo-com.svg" alt="">
                     <img src="assets/icons/instagram-svgrepo-com.svg" alt="">
@@ -357,7 +1271,7 @@
                     <p>© 2024 Airbnb, Inc.</p>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="d-flex">
                         <li>Privacy</li>
                         <li>Terms</li>
                         <li>Sitemap</li>
@@ -367,8 +1281,8 @@
                 </div>
             </div>
         </div>
-        
-       
+
+
     </footer>
 
 
@@ -377,6 +1291,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
 
