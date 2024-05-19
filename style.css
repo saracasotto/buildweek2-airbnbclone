@@ -1258,6 +1258,9 @@ h6 {
 .rsp{
   display: none;
 }
+.z-i{
+  z-index: 1021;
+}
 @media (max-width: 767.98px) { 
   #spostaDiv{
     display: none;
@@ -1270,5 +1273,11 @@ h6 {
   }
   .rsp{
     display: flex;
+  }
+  .z-i{
+    width: -webkit-fill-available;
+  }
+  .f-w{
+    width: -webkit-fill-available;
   }
  }
