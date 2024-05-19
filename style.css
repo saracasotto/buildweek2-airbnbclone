@@ -532,26 +532,28 @@ nav {
   opacity: .9;
   transition: transform .3s;
 }
+
 .save-btn:hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-.card .carousel-control-next-icon:hover img, .carousel-control-prev-icon:hover img {
+.card .carousel-control-next-icon:hover img,
+.carousel-control-prev-icon:hover img {
   transform: scale(1.1);
   opacity: 1;
 }
 
-.card .carousel .carousel-control-prev-icon, 
+.card .carousel .carousel-control-prev-icon,
 .card .carousel .carousel-control-next-icon {
   transition: opacity .4s;
 }
 
-.card .carousel:hover .carousel-control-prev-icon, 
+.card .carousel:hover .carousel-control-prev-icon,
 .card .carousel:hover .carousel-control-next-icon {
   cursor: pointer;
   opacity: .9;
-  
+
 }
 
 .card .carousel-inner {
@@ -603,7 +605,7 @@ nav {
 
 /* TOP BAR NAV */
 
-#spostaDiv div{
+#spostaDiv div {
   margin-inline: 12px;
 }
 
@@ -613,8 +615,8 @@ nav {
   display: flex;
   font-size: 0.9em;
   font-weight: 500;
-  cursor: pointer; 
-  width: auto; 
+  cursor: pointer;
+  width: auto;
   justify-content: space-around;
   padding: 10px;
 }
@@ -629,7 +631,7 @@ nav {
   border-radius: 50px;
 }
 
-.bar-container button{
+.bar-container button {
   padding-inline: 14px 24px;
 }
 
@@ -694,7 +696,6 @@ input[type="text"]:focus {
   overflow-x: scroll;
   white-space: nowrap;
   scroll-snap-type: x mandatory;
-  overflow-x: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
@@ -906,9 +907,9 @@ footer ul li:hover {
     justify-content: space-between;
   }
 
-  #foot  {
-  display: flex;
-  align-items: center;
+  #foot {
+    display: flex;
+    align-items: center;
   }
 
   #foot div p {
@@ -931,15 +932,21 @@ footer ul li:hover {
 }
 
 main .results {
-  width: 65%;
+  width: 64%;
   height: 80vh;
   overflow-y: scroll;
   scrollbar-width: none;
-
 }
 
+@media (min-width:576px) and (max-width:997px) {
+  main .results {
+    overflow-y:unset;
+  }
+}
+
+
 main .map {
-  width: 35%;
+  width: 34%;
 }
 
 main .map iframe {
@@ -969,10 +976,6 @@ main .map iframe {
     width: 100%;
   }
 
-  body {
-    padding-top: 100px;
-  }
-
   main .results {
     width: 100%;
     overflow-y: visible;
@@ -998,7 +1001,7 @@ main .map iframe {
     padding-top: 1em;
     text-align: center;
   }
-  
+
 
 }
 
@@ -1209,7 +1212,7 @@ h3 {
 
 .description .row .col-2 {
   text-align: center;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 #rooms .description .row:first-of-type span img {
@@ -1245,7 +1248,7 @@ h3 {
     width: 25px;
     height: 25px;
   }
-  
+
 }
 
 
@@ -1275,6 +1278,7 @@ h3 {
   padding: 0;
   margin: 0;
 }
+
 .description .features-list li {
   list-style-type: none;
   padding: 0.5em 0;
@@ -1283,7 +1287,7 @@ h3 {
 }
 
 .description .features-list li span:last-of-type {
-  padding: 0 1em ;
+  padding: 0 1em;
 }
 
 .calendar h4 {
@@ -1291,7 +1295,7 @@ h3 {
   font-weight: 600;
 }
 
-.calendar h5{
+.calendar h5 {
   font-size: 0.9em;
   opacity: 0.9;
 }
@@ -1315,11 +1319,12 @@ h3 {
 }
 
 
-table th, table td {
+table th,
+table td {
   width: 14.27%;
   border: transparent;
 }
- 
+
 table td:hover {
   cursor: pointer;
   background-color: #ddd;
@@ -1333,63 +1338,130 @@ table td:hover {
   display: none;
   z-index: 100;
   height: 50px;
-    width: 130px;
-    border-radius: 24px;
-    background: rgb(34, 34, 34);
+  width: 130px;
+  border-radius: 24px;
+  background: rgb(34, 34, 34);
 }
+
 .mapbtn:hover {
-  color:  rgb(34, 34, 34);
-  background-color:  rgb(34, 34, 34);
-  border-color:  rgb(34, 34, 34);
-  --bs-btn-active-bg: rgb(34, 34, 34) ;
+  color: rgb(34, 34, 34);
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(34, 34, 34);
+  --bs-btn-active-bg: rgb(34, 34, 34);
 }
-.mapbtn span{
+
+.mapbtn span {
   color: white;
   font-weight: 400;
 }
 
-@media (min-width: 576px) and (max-width: 991.98px) { 
+@media (min-width: 576px) and (max-width: 991.98px) {
   .mapbtn {
-      display: block;
+    display: block;
   }
 }
 
-.modal-content{
-      background-color: transparent;
-      border: transparent;
+.modal-content {
+  background-color: transparent;
+  border: transparent;
 }
-.modal-header{
+
+.modal-header {
   border-bottom: transparent;
 }
-.modal-header .btn-close{
+
+.modal-header .btn-close {
   background-color: antiquewhite;
 }
 
+@media (max-width: 767px) {
+  #rooms .reviews {
+    background-color: rgba(252, 230, 234, 0.788);
+  }
+
+}
+
+.reviews .overall-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reviews .overall-rating .rating-number {
+  margin: 0 auto;
+  font-size: 5em;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+
+}
+
+.reviews .overall-rating .rating-description {
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.1em;
+  opacity: 0.9;
+  width: 400px;
+
+}
 
 .ratings-grid {
-  display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   gap: 20px;
+  font-weight: bold;
+  padding-bottom: 2em;
+  border-bottom: solid 0.5px #ddd;
 }
 
 .rating-item {
-  flex: 1 1 calc(14.28% - 20px); /* Each item takes approximately 1/7th of the container width */
+  width: 14.28%;
   text-align: start;
+  border-right: solid 0.5px #ddd;
+}
+
+h6 {
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.rating-item p {
+  font-size: 1em;
+}
+
+@media (max-width: 1200px) {
+
+  h6 {
+    font-size: 0.6em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .rating-item p {
+    font-size: 0.9em;
+  }
+}
+
+.rating-item:last-of-type {
+  border-right: none
 }
 
 .rating-bar {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .bar {
-  width: 100%;
+  width: 90%;
   background-color: #f1f1f1;
-  height: 6px;
-  margin: 3px 0;
+  height: 4px;
+  margin: 5px 0;
   position: relative;
 }
 
@@ -1401,17 +1473,85 @@ table td:hover {
   left: 0;
 }
 
-h6 {
-  font-size: 0.875rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+
+.user-reviews {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.user-reviews .card {
+  width: 50%;
+  margin: 0.8em;
+  border-radius: 25px;
+}
+
+#rooms .user-reviews .card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+#rooms .user-reviews .card-title {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+#rooms .user-reviews .card-subtitle {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+#rooms .user-reviews .stay-details span {
+  font-size: 0.9em;
+  padding-right: 1em;
+} 
+
+#rooms .user-reviews .stay-details i {
+  font-size: 0.6em;
+} 
+
+#rooms .user-reviews .card-text {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+#rooms .user-reviews .card-link {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+
+
+@media (min-width: 576px) and (max-width:991px) {
+  .user-reviews .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .user-reviews.container {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .user-reviews .card {
+    min-width: 90%;
+  }
+}
+
+
+
 
 #spostaDiv {
   justify-content: center;
   display: flex;
   padding-left: 10em;
 }
+
 #spostaDiv div {
   padding-right: 1%;
 }

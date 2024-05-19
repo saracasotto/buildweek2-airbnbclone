@@ -12,20 +12,3 @@ nextButton.addEventListener('click', function () {
 });
 
 
-/* DROPDOWN FUNCTIONS */
-
-/* document.addEventListener('click', e => {
-    const idDropdownButton = e.target.matches("[data-drop-button]")
-    if (!idDropdownButton && e.target.closest("[data-drop]") != null ) return
-
-    let currentDropdown 
-    if (idDropdownButton) {
-        currentDropdown = e.target.closest("[data-drop]")
-        currentDropdown.classList.toggle('active')
-    }
-
-    document.querySelectorAll("[data-drop].active").forEach(dropdown => {
-        if (dropdown === currentDropdown) return
-        dropdown.classList.remove('active')
-    })
-}) */
