@@ -17,37 +17,38 @@
 </head>
 
 <body id="rooms">
-    <header class="container-fluid px-0 align-items-center hdr sticky-top ">
-        <div class="d-flex container p-2 ">
-            <div class="logo d-none d-md-block">
+    <header class="container-fluid align-items-center hdr sticky-top ">
+        <div>
+        <div class="d-flex container py-3 ">
+            <div class="logo d-none d-lg-block">
                 <a href="index.html"><img src="assets/logo-pink.png" alt="logo"></a>
             </div>
             <div class="container-fluid d-flex align-items-baseline ">
                 <div class="container-fluid " id="spostaDiv">
                     <div>
                         <button>
-                            <p>
-                                Stays
-                            </p>
+                        <p>
+                            Stays
+                        </p>
                         </button>
                     </div>
                     <div>
                         <button>
-                            <p>
-                                Experiences
-                            </p>
+                        <p>
+                            Experiences
+                        </p>
                         </button>
                     </div>
                     <div>
                         <button>
-                            <p>
-                                Online Experiences
-                            </p>
+                        <p>
+                            Online Experiences
+                        </p>
                         </button>
                     </div>
                 </div>
 
-                <div class="user d-none d-md-flex align-items-center">
+                <div class="user d-none d-lg-flex align-items-center">
                     <div style="width: 130px;">
                         <p>Airbnb your home</p>
                     </div>
@@ -75,7 +76,7 @@
                         </svg>
 
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end" style="z-index: 1021;">
+                    <ul class="dropdown-menu dropdown-menu-end z-i">
                         <li><button class="dropdown-item" type="button"><b>Sign up</b></button></li>
                         <li><button class="dropdown-item" type="button">Log in</button></li>
                         <li>
@@ -84,6 +85,15 @@
                         <li><button class="dropdown-item" type="button">Gift Cards</button></li>
                         <li><button class="dropdown-item" type="button">Airbnb your home</button></li>
                         <li><button class="dropdown-item" type="button">Help center</button></li>
+                        <hr class="dropdown-divider">
+                        <div class="container-fluid rsp">
+                            <form class="d-flex f-w" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#FF385C" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg></button>
+                            </form>
+                          </div>
                     </ul>
                 </div>
             </div>
@@ -91,231 +101,229 @@
         <div class="d-flex justify-content-center" style="margin-bottom: 1%;">
             <div class="bar-container">
                 <div>
-                    <button>
-                        <div>
-                            <p>Where</p>
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Search destinations" style="padding: 0 !important;">
-                        </div>
-                        </label>
+                <button>
+                    <div>
+                    <p>Where</p>
+                    </div>
+                    <div>
+                    <input type="text" placeholder="Search destinations" style="padding: 0 !important;">
+                    </div>
+                </button>
                 </div>
                 <div>
-                    <button>
-                        <div>
-                            <p>Check-in</p>
-                        </div>
-                        <div>
-                            <p>Add dates</p>
-                        </div>
-                    </button>
+                <button>
+                    <div>
+                    <p>Check-in</p>
+                    </div>
+                    <div>
+                        <p>Add dates</p>
+                    </div>
+                </button>
                 </div>
                 <div>
-                    <button>
-                        <div>
-                            <p>Check-out</p>
-                        </div>
-                        <div>
-                            <p>Add dates</p>
-                        </div>
-                    </button>
+                <button>
+                    <div>
+                    <p>Check-out</p>
+                    </div>
+                    <div>
+                        <p>Add dates</p>
+                    </div>
+                </button>
                 </div>
                 <div class="d-flex ">
-                    <button>
-                        <div>
-                            <div>
-                                <p>Who</p>
-                            </div>
-                            <div>
-                                <p>Add guests</p>
-                            </div>
+                <button>
+                    <div>
+                    <div>
+                    <p>Who</p>
+                    </div>
+                    <div>
+                        <p>Add guests</p>
+                    </div>
+                </button>
+                <div style="background-color: #FF385C; width: 43px;">
+                    <button style="padding-top: 20%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
                     </button>
-                    <div style="background-color: #FF385C; width: 43px;">
-                        <button style="padding-top: 20%;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                            </svg>
-                        </button>
-                    </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        <!-- ICONE CAROSELLO SOTTO NAV-->
-        <nav class="container-fluid px-5 sticky-top ">
-            <div id="iconsCarousel" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        local_activity
-                                    </span>
-                                    <p>Icon</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        landscape
-                                    </span>
-                                    <p>Countryside</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        pool
-                                    </span>
-                                    <p>Pool</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        rocket
-                                    </span>
-                                    <p>Wow</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        piano
-                                    </span>
-                                    <p>Piano</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        nature
-                                    </span>
-                                    <p>Park</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        castle
-                                    </span>
-                                    <p>Castle</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        sailing
-                                    </span>
-                                    <p>Boats</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        coffee
-                                    </span>
-                                    <p>B&B</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        kayaking
-                                    </span>
-                                    <p>Lake</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        sports_golf
-                                    </span>
-                                    <p>Golf</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        downhill_skiing
-                                    </span>
-                                    <p>Skiing</p>
-                                </div>
 
-
+            <!-- ICONE CAROSELLO SOTTO NAV-->
+    <nav class="container-fluid px-5 sticky-top ">
+        <div id="iconsCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    local_activity
+                                </span>
+                                <p>Icon</p>
                             </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    landscape
+                                </span>
+                                <p>Countryside</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    pool
+                                </span>
+                                <p>Pool</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    rocket
+                                </span>
+                                <p>Wow</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    piano
+                                </span>
+                                <p>Piano</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    nature
+                                </span>
+                                <p>Park</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    castle
+                                </span>
+                                <p>Castle</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    sailing
+                                </span>
+                                <p>Boats</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    coffee
+                                </span>
+                                <p>B&B</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    kayaking
+                                </span>
+                                <p>Lake</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    sports_golf
+                                </span>
+                                <p>Golf</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    downhill_skiing
+                                </span>
+                                <p>Skiing</p>
+                            </div>
+
+
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <div class="row">
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        key
-                                    </span>
-                                    <p>New</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        ac_unit
-                                    </span>
-                                    <p>North Pole</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        local_fire_department
-                                    </span>
-                                    <p>Trending</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        cabin
-                                    </span>
-                                    <p>Cabins</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        surfing
-                                    </span>
-                                    <p>Surf</p>
-                                </div>
-                                <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        beach_access
-                                    </span>
-                                    <p>Beach</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        self_improvement
-                                    </span>
-                                    <p>Relax</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        location_city
-                                    </span>
-                                    <p>City</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        local_dining
-                                    </span>
-                                    <p>Kitchen</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        landscape_2
-                                    </span>
-                                    <p>Mountain</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        attractions
-                                    </span>
-                                    <p>Attractions</p>
-                                </div>
-                                <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
-                                    <span class="material-symbols-outlined">
-                                        festival
-                                    </span>
-                                    <p>Festival</p>
-                                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    key
+                                </span>
+                                <p>New</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    ac_unit
+                                </span>
+                                <p>North Pole</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    local_fire_department
+                                </span>
+                                <p>Trending</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    cabin
+                                </span>
+                                <p>Cabins</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    surfing
+                                </span>
+                                <p>Surf</p>
+                            </div>
+                            <div class="icon col-1 d-none d-lg-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    beach_access
+                                </span>
+                                <p>Beach</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    self_improvement
+                                </span>
+                                <p>Relax</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    location_city
+                                </span>
+                                <p>City</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    local_dining
+                                </span>
+                                <p>Kitchen</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    landscape_2
+                                </span>
+                                <p>Mountain</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    attractions
+                                </span>
+                                <p>Attractions</p>
+                            </div>
+                            <div class="icon col-2 col-lg-1 d-flex flex-column align-items-center">
+                                <span class="material-symbols-outlined">
+                                    festival
+                                </span>
+                                <p>Festival</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#iconsCarousel" data-bs-slide="prev">
-                <img src="assets/icons/left.png" alt="">
-            </button>
-            <!-- Pulsante successivo -->
-            <button class="carousel-control-next" type="button" data-bs-target="#iconsCarousel" data-bs-slide="next">
-                <img src="assets/icons/right.png" alt="">
-            </button>
-        </nav>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#iconsCarousel" data-bs-slide="prev">
+            <img src="assets/icons/left.png" alt="">
+        </button>
+        <!-- Pulsante successivo -->
+        <button class="carousel-control-next" type="button" data-bs-target="#iconsCarousel" data-bs-slide="next">
+            <img src="assets/icons/right.png" alt="">
+        </button>
+    </nav>
     </header>
 
     <main class="container" id="third-page">
