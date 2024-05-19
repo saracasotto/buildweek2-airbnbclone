@@ -39,14 +39,9 @@ header .user #globe:hover {
 }
 
 header button {
-  border: solid 1px silver;
-  padding: 0 4px;
+  border: transparent;
   background-color: transparent;
   border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 0.5em;
 }
 
 header button i {
@@ -60,6 +55,7 @@ header button i:last-of-type {
 
 .bi-globe {
   margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .min {
@@ -117,29 +113,19 @@ button.btn {
 
 /*ICONS CAROUSEL*/
 
-nav {
-  position: relative;
-}
 
 header {
-  position: fixed;
   top: 0%;
   background-color: white;
-  z-index: 1000;
 }
 
 nav {
-  position: fixed;
   top: 100px;
-  z-index: 900;
   background-color: white;
   border-top: solid 0.2px #e2e2e2;
   padding-top: 20px;
 }
 
-body {
-  padding-top: 190px;
-}
 
 #iconsCarousel button {
   position: absolute;
@@ -322,48 +308,36 @@ body {
 
 /* TOP BAR NAV */
 
-#top-bar {
-  padding: 0;
-  margin: 0 auto;
-  overflow: hidden;
+#spostaDiv div{
+  margin-inline: 12px;
 }
 
 .bar-container {
-  width: 80%;
-  margin: 0 auto;
   box-shadow: 0 0 5px hsl(0 0% 78%);
   border-radius: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 0.9em;
   font-weight: 500;
-  cursor: pointer;
-  overflow: hidden;
+  cursor: pointer; 
+  width: auto; 
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .bar-container div {
   border-radius: inherit;
-  padding: 0.8rem 1.5rem;
 }
 
 .bar-container div:hover {
   background: hsl(0 0% 94%);
 }
 
-.bar-container input::placeholder {
-  font-size: 1.1em;
+.bar-container button{
+  padding-inline: 14px 24px;
 }
 
-.location,
-.guests {
-  width: 30%;
-}
 
-.check-in,
-.check-out {
-  width: 20%;
-}
+
 
 input[type="text"] {
   background: none;
@@ -376,32 +350,13 @@ input[type="text"]:focus {
   outline: none;
 }
 
-.guests {
-  position: relative;
-}
 
-.guests span {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 12%;
-  right: 10px;
-  background: #FF385C;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: center;
-  padding: 1em 1em;
-}
+
 
 .guests span i {
   color: white;
   font-weight: bold;
   font-size: 1.3em;
-}
-
-.bar-container>div {
-  position: relative;
 }
 
 
@@ -413,7 +368,7 @@ input[type="text"]:focus {
   transform: translateY(-50%);
   width: 1px;
   height: 55%;
-  background: hsl(0 0% 90%);
+
 }
 
 .bar-container>div:nth-of-type(1)::before {
@@ -427,6 +382,7 @@ input[type="text"]:focus {
 
 .bar-container p {
   margin-bottom: 0;
+  text-align: left;
 }
 
 /*NAV FOOTER*/
@@ -1154,3 +1110,11 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
+#spostaDiv {
+  justify-content: center;
+  display: flex;
+  padding-left: 10em;
+}
+#spostaDiv div {
+  padding-right: 1%;
+}

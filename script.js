@@ -10,4 +10,3 @@ prevButton.addEventListener('click', function () {
 nextButton.addEventListener('click', function () {
     scrollContainer.scrollLeft += 200; // Imposta la quantità di spostamento
 });
-
