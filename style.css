@@ -321,7 +321,7 @@ nav {
   cursor: pointer; 
   width: auto; 
   justify-content: space-around;
-  padding-inline: 10px;
+  padding: 10px;
 }
 
 .bar-container div {
@@ -351,19 +351,7 @@ input[type="text"]:focus {
 }
 
 
-.guests span {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 12%;
-  right: 10px;
-  background: #FF385C;
-  color: white;
-  border-radius: 50%;
-  text-align: center;
-  vertical-align: center;
-  padding: 1em 1em;
-}
+
 
 .guests span i {
   color: white;
@@ -380,7 +368,7 @@ input[type="text"]:focus {
   transform: translateY(-50%);
   width: 1px;
   height: 55%;
-  background: hsl(0 0% 90%);
+
 }
 
 .bar-container>div:nth-of-type(1)::before {
@@ -1124,37 +1112,9 @@ h6 {
 
 #spostaDiv {
   justify-content: center;
-  position: relative;
   display: flex;
   padding-left: 10em;
 }
-#spostaDiv div{
+#spostaDiv div {
   padding-right: 1%;
 }
-#spostaDiv.spostato {
-  animation-name: trasforma1;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-#spostaDiv2 {
-  width: auto;
-  position: relative;
-  display: flex;
-}
-#spostaDivdue.spostato {
-  animation-name: trasforma2;
-animation-duration: 0.5s;
-animation-fill-mode: forwards;
-}
-
-@keyframes trasforma1 {
-        from {top: 0;}
-        to {top: -100px;}
-    }
-    @keyframes trasforma2 {
-        from {top: 0;}
-        to {top: -20px;}
-    }
-
-
-
