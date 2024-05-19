@@ -113,29 +113,19 @@ button.btn {
 
 /*ICONS CAROUSEL*/
 
-nav {
-  position: relative;
-}
 
 header {
-  position: fixed;
   top: 0%;
   background-color: white;
-  z-index: 1000;
 }
 
 nav {
-  position: fixed;
   top: 100px;
-  z-index: 900;
   background-color: white;
   border-top: solid 0.2px #e2e2e2;
   padding-top: 20px;
 }
 
-body {
-  padding-top: 190px;
-}
 
 #iconsCarousel button {
   position: absolute;
@@ -1137,7 +1127,6 @@ h6 {
 
 #spostaDiv {
   justify-content: center;
-  /* Posiziona il div al centro orizzontale della finestra visibile */
   position: relative;
   display: flex;
   padding-left: 10em;
@@ -1145,6 +1134,30 @@ h6 {
 #spostaDiv div{
   padding-right: 1%;
 }
+#spostaDiv.spostato {
+  animation-name: trasforma1;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+#spostaDiv2 {
+  width: auto;
+  position: relative;
+  display: flex;
+}
+#spostaDivdue.spostato {
+  animation-name: trasforma2;
+animation-duration: 0.5s;
+animation-fill-mode: forwards;
+}
+
+@keyframes trasforma1 {
+        from {top: 0;}
+        to {top: -100px;}
+    }
+    @keyframes trasforma2 {
+        from {top: 0;}
+        to {top: -20px;}
+    }
 
 
 
