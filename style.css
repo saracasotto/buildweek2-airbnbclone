@@ -1253,3 +1253,20 @@ h6 {
 #spostaDiv div {
   padding-right: 1%;
 }
+.rsp{
+  display: none;
+}
+@media (max-width: 767.98px) { 
+  #spostaDiv{
+    display: none;
+  }
+  .bar-container{
+    display: none;
+  }
+  .btn-group{
+    width: -webkit-fill-available;
+  }
+  .rsp{
+    display: flex;
+  }
+ }
